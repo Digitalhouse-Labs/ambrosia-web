@@ -1,0 +1,27 @@
+{
+   "HomePage": {
+      "title": "Willkommen!",
+      "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit."
+   },
+   "LocaleSwitcher": {
+      "label": "Sprache ändern",
+      "locale": "{locale, select, de {Deutsch} en {English} other {Unbekannt}}",
+      "changeLanguage": "Sprache ändern"
+   },
+   "GoogleReviews": {
+      "excellent": "Hervorragend",
+      "basedOn": "Basierend auf {reviews} Bewertungen"
+   },
+   "Navigation": {
+      "menu": "Menu",
+      "home": "Startseite",
+      "menuCard": "Speisekarte",
+      "reservation": "Jetzt reservieren",
+      "callUs": "Rufen Sie uns an",
+      "directions": "Route planen",
+      "close": "Schließen"
+   },
+   "Header": {
+      "booking": "Jetzt reservieren"
+   }
+}
