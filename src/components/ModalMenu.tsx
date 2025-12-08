@@ -22,6 +22,7 @@ export default function ModalMenu() {
    const pathname = usePathname()
    const t = useTranslations("Navigation")
    const isHome = pathname === `/${locale}` || pathname === "/"
+   const isMenu = pathname === `/${locale}/menu` || pathname === "/menu"
 
    const handleNavigateHome = (close: () => void) => {
       close()
@@ -29,7 +30,7 @@ export default function ModalMenu() {
    }
 
    return (
-      <Modal>
+      <Modal key={pathname}>
          <Modal.Trigger>
             <div className="group flex items-center gap-3">
                <Hamburger className="ease-out-quart text-accent size-8 group-hover:scale-[0.97] group-hover:transition-transform md:size-11" />
@@ -63,7 +64,9 @@ export default function ModalMenu() {
                         </Button>
                         <Link
                            href="/menu"
-                           className="button button--md button--ghost min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70"
+                           className={`button button--md button--ghost min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70 ${
+                              isMenu ? "bg-default/80" : ""
+                           }`}
                         >
                            <BookOpen className="size-6" />
                            {t("menuCard")}
@@ -94,11 +97,6 @@ export default function ModalMenu() {
                         </a>
                         <LocaleSwitcher />
                      </Modal.Body>
-                     {/*<Modal.Footer>*/}
-                     {/*   <Button variant="tertiary" onPress={close}>*/}
-                     {/*      {t("close")}*/}
-                     {/*   </Button>*/}
-                     {/*</Modal.Footer>*/}
                   </>
                )}
             </Modal.Dialog>
