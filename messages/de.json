@@ -1,0 +1,78 @@
+{
+   "HomePage": {
+      "title": "Willkommen!",
+      "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit.",
+      "houseFavorites": "Haus-Spezialitäten",
+      "viewFullMenu": "Zur Speisekarte"
+   },
+   "LocaleSwitcher": {
+      "label": "Sprache ändern",
+      "locale": "{locale, select, de {Deutsch} en {English} other {Unbekannt}}",
+      "changeLanguage": "Sprache ändern"
+   },
+   "GoogleReviews": {
+      "excellent": "Hervorragend",
+      "basedOn": "Basierend auf {reviews} Bewertungen"
+   },
+   "Navigation": {
+      "menu": "Menu",
+      "home": "Startseite",
+      "menuCard": "Speisekarte",
+      "reservation": "Jetzt reservieren",
+      "callUs": "Rufen Sie uns an",
+      "directions": "Route planen",
+      "close": "Schließen",
+      "appearance": "Aussehen"
+   },
+   "Header": {
+      "booking": "Jetzt reservieren"
+   },
+   "Footer": {
+      "information": "Informationen",
+      "informationDescription": "Sehen Sie unsere Adresse, Kontaktdaten und Zahlungsmethoden.",
+      "followUs": "Folgen Sie uns",
+      "businessInformation": "Unternehmens informationen",
+      "companyName": "Firmenname",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "paymentMethods": "Zahlungsmethoden",
+      "taxId": "St.-Nr.",
+      "review": "Bewerten Sie uns"
+   },
+   "Menu": {
+      "categories": "Kategories"
+   },
+   "ReservationForm": {
+      "title": "Ambrosia Tischreservierung",
+      "descriptionForm": "Reservieren Sie bequem online einen Tisch im Ambrosia. Schnell, einfach und zuverlässig wir freuen uns auf Ihren Besuch.",
+      "firstName": "Vorname",
+      "firstNamePlaceholder": "Vorname",
+      "lastName": "Nachname",
+      "lastNamePlaceholder": "Nachname",
+      "email": "E-Mail",
+      "emailPlaceholder": "E-Mail",
+      "telephone": "Telefon",
+      "telephonePlaceholder": "Telefonnummer",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "persons": "Anzahl der Personen",
+      "personsPlaceholder": "Wie viele Personen?",
+      "occasion": "Anlass",
+      "occasionPlaceholder": "Anlass auswählen",
+      "occasionBirthday": "Geburtstagsfeier",
+      "occasionAnniversary": "Jahrestag",
+      "occasionBusiness": "Geschäftstreffen",
+      "occasionDate": "Verabredungsabend",
+      "occasionFamily": "Familientreffen",
+      "occasionOther": "Andere",
+      "description": "Beschreibung (Optional)",
+      "descriptionPlaceholder": "Besondere Wünsche oder Anmerkungen?",
+      "submit": "Reservierung absenden",
+      "submitting": "Wird gesendet...",
+      "success": "Reservierung erfolgreich gesendet!",
+      "error": "Fehler",
+      "successTitle": "Vielen Dank!",
+      "successMessage": "Ihre Reservierung wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
+      "backToHome": "Zurück zur Startseite"
+   }
+}

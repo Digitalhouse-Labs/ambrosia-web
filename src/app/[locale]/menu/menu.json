@@ -1,0 +1,911 @@
+[
+   {
+      "id": "1",
+      "name": "Kalte Vorspeisen",
+      "description": "Alle Vorspeisen werden mit Brot serviert",
+      "menuItems": [
+         {
+            "name": "1. Tzatziki",
+            "description": "Griechische Joghurtcreme mit Gurken & Knoblauch",
+            "price": "6,50"
+         },
+         {
+            "name": "2. Taramas",
+            "description": "Griechische Kaviarcreme",
+            "price": "7,50"
+         },
+         {
+            "name": "3. Feta Me Elies & Piperies",
+            "description": "Schafskäse Natur mit Oliven & Peperoni",
+            "price": "9,90"
+         },
+         {
+            "name": "4. Chtapodi & Kalamari",
+            "description": "Meeresfrüchtesalat nach Art des Hauses",
+            "price": "13,90"
+         },
+         {
+            "name": "5. Trilogia Dip Creme's",
+            "description": "Schafskäsecreme (leicht pikant), Auberginencreme & Tzatziki",
+            "price": "8,00"
+         },
+         {
+            "name": "6. Kria Poikilia",
+            "description": "Gemischter kalter Vorspeiseteller mit Tzatziki, Auberginencreme, Tirosalata, Taramas, Feta, Oliven, Peperoni, Tomaten & Pitabrot",
+            "price": "17,50"
+         }
+      ]
+   },
+   {
+      "id": "2",
+      "name": "Warme Vorspeisen",
+      "menuItems": [
+         {
+            "name": "12. Dolmadakia",
+            "description": "Weinblätter, gefüllt mit Reis & Hackfleisch, dazu helle Zitronensauce nach hausgemachtem Rezept",
+            "price": "10,50"
+         },
+         {
+            "name": "13. Skordopsomo",
+            "description": "Knoblauchbrot nach hausgemachtem Rezept & Tzatziki",
+            "price": "7,20"
+         },
+         {
+            "name": "14. Piperies Sto Grill",
+            "description": "Gegrillte Peperoni mit frischem Knoblauch-Dressing",
+            "price": "8,90"
+         },
+         {
+            "name": "17. Spezialität Des Hauses",
+            "description": "Fladenbrot gefüllt mit Garnelen, Tomaten, Paprika, Peperoni, Knoblauch, Mozzarella-Käse & geriebenem Feta-Käse",
+            "price": "14,50"
+         },
+         {
+            "name": "18. Chtapodi Sto Tigani",
+            "description": "Oktopus in der Pfanne mit Cherry-Tomaten, Olivenfilets & Zwiebeln, mariniert mit Weinessig",
+            "price": "19,50"
+         },
+         {
+            "name": "19. Melitzanes & Kolokithia",
+            "description": "Auberginen & Zucchinischeiben, gebacken mit Knoblauch-Dressing und Tzatziki",
+            "price": "11,50"
+         },
+         {
+            "name": "20. Garides Saganaki",
+            "description": "Garnelen in Tomaten-Schafskäse-Sauce",
+            "price": "17,00"
+         },
+         {
+            "name": "22. Eviva Piato",
+            "description": "Warmer Vorspeiseteller (Spitzpaprika, Käsebällchen, Tomatenbällchen, Auberginen & Zucchinischeiben, Dolmadakia, Knoblauch & Pitabrot)",
+            "price": "19,50"
+         }
+      ]
+   },
+   {
+      "id": "3",
+      "name": "Käse",
+      "menuItems": [
+         {
+            "name": "23. Feta Saganaki",
+            "description": "Gebackener Feta-Käse aus der Pfanne mit Sesam & Honig",
+            "price": "10,20"
+         },
+         {
+            "name": "24. Feta Sto Fourno Bougiourdi",
+            "description": "Feta-Käse aus dem Backofen mit Peperoni, Paprika, Tomaten, Knoblauch, Mozzarella-Käse & Graviera-Käse",
+            "price": "13,20"
+         },
+         {
+            "name": "25. Mastelo",
+            "description": "Weißer Weichkäse aus Chios ofengebacken & serviert mit feiner Pflaumenmarmelade",
+            "price": "11,00"
+         }
+      ]
+   },
+   {
+      "id": "4",
+      "name": "Salate",
+      "menuItems": [
+         {
+            "name": "30. Choriatiki",
+            "description": "Bauernsalat - Ein Salat, wie ihn die Griechen lieben, mit Tomaten, Gurken, Paprika, Oliven, Zwiebeln, Olivenöl, Balsamico & Schafskäse",
+            "price": "14,90"
+         },
+         {
+            "name": "31. Artemis Salata Kotopoulo",
+            "description": "Bunter Salat, gebratene Hähnchen-Häppchen, karamellisiert mit Zwetschgen, Walnüssen, Tomaten, Gurken, Pitabrot, Mais, hausgemachtem Dressing & Mozzarella",
+            "price": "17,50"
+         },
+         {
+            "name": "32. Heras Königlicher Salat Me Garides",
+            "description": "Bunter Salat mit Garnelen-Spieß (Black Tiger), Tomaten, Gurken, Paprikawürfeln, Sesam, Orangenstücken & Pitabrot",
+            "price": "17,50"
+         },
+         {
+            "name": "33. Gyros Salata",
+            "description": "Bundes-Salat, Rucola, Gurken, Tomaten und Zwiebeln, dazu herzhaft-zartes Gyros, Oliven, Peperoni, Pitabrot und hausgemachtes Dressing",
+            "price": "16,50"
+         },
+         {
+            "name": "34. Bunter Salat",
+            "description": "Mit hausgemachtem Dressing",
+            "price": "5,20"
+         }
+      ]
+   },
+   {
+      "id": "5",
+      "name": "Vegetarisch",
+      "menuItems": [
+         {
+            "name": "37. Mousaka",
+            "description": "Hausgemacht mit Auberginen, Zucchini, Kartoffeln und würziger Tomatensauce, verfeinert mit Béchamel ofenfrisch serviert, dazu Salat",
+            "price": "18,00"
+         },
+         {
+            "name": "38. Kritharaki (Reisnudeln)",
+            "description": "Mit mediterranem Gemüse in hausgemachter Tomatensauce und Mozzarella-Käse",
+            "price": "15,20"
+         },
+         {
+            "name": "39. Gemista",
+            "description": "Tomaten & Paprika gefüllt mit Reis, Rosmarinkartoffeln, Mozzarella-Käse dazu Salat",
+            "price": "18,00"
+         },
+         {
+            "name": "40. Gigantes",
+            "description": "Gebackene Riesenbohnen mit Tomatensauce, Fetakäse & Pitabrot",
+            "price": "14,90"
+         },
+         {
+            "name": "41. Imam",
+            "description": "Gebackene Auberginen mit Tomatensauce, Fetakäse & Pitabrot",
+            "price": "14,90"
+         }
+      ]
+   },
+   {
+      "id": "6",
+      "name": "Gerichte aus dem Backofen",
+      "menuItems": [
+         {
+            "name": "46. Moussaka",
+            "description": "Gebratene Auberginen & Kartoffelscheiben mit überbackenem Hackfleisch in Béchamelsauce, geriebener Mozzarella dazu Salat",
+            "price": "18,90"
+         }
+      ]
+   },
+   {
+      "id": "7",
+      "name": "Die Lammhaxe",
+      "description": "Tauchen Sie ein in die griechische Geschmackswelt und erleben Sie die perfekte Harmonie von zartem Lammfleisch und der reichhaltigen Tomatensauce. Jeder Bissen wird Sie mit einem wunderbaren Zusammenspiel von Aromen und Texturen begeistern und Ihnen ein Gefühl von Genuss und Zufriedenheit vermitteln.",
+      "menuItems": [
+         {
+            "name": "47. Mit Kritharaki (Hartweizennudeln), Mozzarella-Käse & Salat",
+            "price": "25,00"
+         },
+         {
+            "name": "48. Mit grünen Bohnen, Feta-Käse & Salat",
+            "price": "25,00"
+         },
+         {
+            "name": "49. Mit Rosmarinkartoffeln, Feta-Käse & Salat",
+            "price": "25,00"
+         }
+      ]
+   },
+   {
+      "id": "8",
+      "name": "Fisch",
+      "menuItems": [
+         {
+            "name": "51. Kalamaris",
+            "description": "Leicht gewürzte Tintenfische, in Mehl geschwenkt und goldbraun gebraten dazu Taramas, Reis & Salat",
+            "price": "20,90"
+         },
+         {
+            "name": "52. Wolfsbarschfilet",
+            "description": "In Mehl geschwenkt und goldbraun gebraten dazu Reis und Tagesgemüse dazu Salat",
+            "price": "26,00"
+         }
+      ]
+   },
+   {
+      "id": "9",
+      "name": "Gegrillte Fisch",
+      "menuItems": [
+         {
+            "name": "53. Gegrillte Kalamaris",
+            "description": "Mit Tagesgemüse, Reis & Salat",
+            "price": "23,90"
+         },
+         {
+            "name": "54. Riesengarnelen",
+            "description": "Mit Tagesgemüse, Reis & Salat",
+            "price": "27,50"
+         },
+         {
+            "name": "55. Lachsfilet",
+            "description": "Mit Butterreis & hausgemachter Zitronensauce, dazu Salat",
+            "price": "24,90"
+         },
+         {
+            "name": "56. Doradenfilet",
+            "description": "Mit Tagesgemüse & Rosmarinkartoffeln, dazu Salat",
+            "price": "24,90"
+         },
+         {
+            "name": "57. Fisch-Teller",
+            "description": "Doradenfilet, Kalamari & Riesengarnelen mit Tagesgemüse & Rosmarinkartoffeln, dazu Salat",
+            "price": "28,00"
+         }
+      ]
+   },
+   {
+      "id": "10",
+      "name": "Köstlichkeiten vom Grill",
+      "menuItems": [
+         {
+            "name": "60. Gyros",
+            "description": "Schweinefleisch vom Drehspieß mit Tomatenreis, Tzatziki & Salat",
+            "price": "17,20"
+         },
+         {
+            "name": "61. Suflaki",
+            "description": "2 Schweinenacken-Spieße mit Tomatenreis, Tzatziki & Salat",
+            "price": "17,50"
+         },
+         {
+            "name": "62. Suflaki \"Estia\"",
+            "description": "2 Schweinenacken-Spieße mit Käse überbacken dazu Tomatenreis, Dipper-Pommes & Salat",
+            "price": "18,00"
+         },
+         {
+            "name": "63. Bifteki",
+            "description": "Spezial-Fleischküchle, gefüllt mit Fetakäse & Mozzarella, dazu Tomatenreis, Tzatziki & Salat",
+            "price": "18,90"
+         },
+         {
+            "name": "64. Lammkotelett vom Carrée",
+            "description": "Mit Tomatenreis, Tzatziki, Salat und Kräuterbutter",
+            "price": "26,00"
+         },
+         {
+            "name": "65. Rinderleber",
+            "description": "Mit gerösteten Zwiebeln, Tomatenreis, Tzatziki & Salat",
+            "price": "19,00"
+         },
+         {
+            "name": "66. Mprizolakia",
+            "description": "2 Schweinesteaks vom Grill mit Tomatenreis, Dipper-Pommes & Salat",
+            "price": "18,90"
+         },
+         {
+            "name": "67. Kalbskotelett",
+            "description": "Mit Tagesgemüse, Rosmarinkartoffeln, Salat & Kräuterbutter",
+            "price": "32,50"
+         }
+      ]
+   },
+   {
+      "id": "11",
+      "name": "Grillteller Spezialität",
+      "menuItems": [
+         {
+            "name": "71. Aphrodite Teller",
+            "description": "Gyros und Kalamari dazu Tomatenreis, Tzatziki & Salat",
+            "price": "20,90"
+         },
+         {
+            "name": "72. Poseidon Teller",
+            "description": "Gyros-Suflaki und Kalamari dazu Tomatenreis, Tzatziki & Salat",
+            "price": "22,90"
+         },
+         {
+            "name": "73. Apollon Teller",
+            "description": "Gyros-Mprizolaki und Sousouki dazu Tomatenreis, Tzatziki & Salat",
+            "price": "20,90"
+         },
+         {
+            "name": "74. Zeus Teller",
+            "description": "Gyros-Mprizolaki und Suflaki dazu Tomatenreis, Tzaziki & Salat",
+            "price": "20,90"
+         },
+         {
+            "name": "75. \"Ambrosia Teller\"",
+            "description": "Gyros, Lammkotelett, Hähnchenbrustfilet & Souvlaki dazu Tomatenreis, Tzatziki & Salat",
+            "price": "23,90"
+         },
+         {
+            "name": "76. Gottes Teller",
+            "description": "Gyros, Schweinemedaillons, Souvlaki & Rinderleber dazu Tomatenreis, Tzatziki & Salat",
+            "price": "22,90"
+         }
+      ]
+   },
+   {
+      "id": "12",
+      "name": "Filets vom Grill",
+      "menuItems": [
+         {
+            "name": "79. Lammfilet",
+            "description": "Mit Tagesgemüse, Rosmarinkartoffeln, Salat & Kräuterbutter",
+            "price": "28,50"
+         },
+         {
+            "name": "80. Schweinenacken Medaillons",
+            "description": "Mit Dipper-Pommes & Metaxa-Sauce dazu Salat",
+            "price": "21,90"
+         },
+         {
+            "name": "81. Hähnchenbrustfilet",
+            "description": "Mit Dipper-Pommes und Reis, dazu Salat",
+            "price": "18,90"
+         },
+         {
+            "name": "82. Hähnchenbrustfilet",
+            "description": "Mit Butterreis & Zitronensauce dazu Salat",
+            "price": "21,50"
+         }
+      ]
+   },
+   {
+      "id": "13",
+      "name": "Aus der Pfanne",
+      "menuItems": [
+         {
+            "name": "87. Gyros Metaxa",
+            "description": "Pfannengyros mit frischen Kräutern, verfeinert mit Metaxa-Sauce & Mozzerella-Käse, dazu Dipper-Pommes & Salat",
+            "price": "20,90"
+         },
+         {
+            "name": "88. Hähnchenbrustfilet a la Crème",
+            "description": "Gebratene Hähnchenfilethäppchen mit frischem Gemüse, Milchcreme & Pilzen, leicht mit Senf gewürzt, dazu Dipper-Pommes & Salat",
+            "price": "21,50"
+         },
+         {
+            "name": "89. Schweinefilet",
+            "description": "Gebratene Schweinefilethäppchen mit einem Schuss Wein & frischem Gemüse in Tomatensauce, Mais, serviert mit Butterreis & Salat",
+            "price": "21,50"
+         },
+         {
+            "name": "90. Schnitzel Wiener Art",
+            "description": "Paniertes Schweineschnitzel mit Dipper-Pommes & Salat",
+            "price": "18,00"
+         }
+      ]
+   },
+   {
+      "id": "14",
+      "name": "Kinder Gerichte",
+      "description": "Für Kinder bis 12 Jahren",
+      "menuItems": [
+         {
+            "name": "95. Gyros mit Pommes",
+            "price": "9,90"
+         },
+         {
+            "name": "96. Suflaki mit Pommes",
+            "price": "9,90"
+         },
+         {
+            "name": "97. Schnitzel mit Pommes & Ketchup",
+            "price": "9,90"
+         },
+         {
+            "name": "98. Hähnchenbrustfilet mit Pommes & Ketchup",
+            "price": "9,90"
+         }
+      ]
+   },
+   {
+      "id": "15",
+      "name": "Beilagen",
+      "menuItems": [
+         {
+            "name": "100. Tomatenreis",
+            "price": "4,50"
+         },
+         {
+            "name": "101. Pommes Frites (Dipper-Pommes)",
+            "price": "4,90"
+         },
+         {
+            "name": "102. Pitabrot",
+            "price": "3,50"
+         },
+         {
+            "name": "103. Tagesgemüse",
+            "price": "6,00"
+         },
+         {
+            "name": "104. Rosmarinkartoffeln",
+            "price": "6,50"
+         }
+      ]
+   },
+   {
+      "id": "16",
+      "name": "Extra Saucen",
+      "menuItems": [
+         {
+            "name": "107. Metaxa-Sauce",
+            "price": "3,50"
+         },
+         {
+            "name": "108. Zitronen-Sauce",
+            "price": "3,50"
+         }
+      ]
+   },
+   {
+      "id": "17",
+      "name": "Nachspeisen",
+      "description": "Liebe Gäste, fragen Sie nach unserem Tagesdessert",
+      "menuItems": [
+         {
+            "name": "120. Griechischer Joghurt",
+            "description": "Mit Honig und Walnüssen oder mit karamellisierten Früchten",
+            "price": "7,50"
+         },
+         {
+            "name": "121. Galaktobouriko",
+            "description": "Blätterteig gefüllt mit feiner Grießcreme & Eis",
+            "price": "8,00"
+         },
+         {
+            "name": "122. Schoko Soufflee",
+            "description": "Mit flüssigem Kern und Eis",
+            "price": "8,50"
+         },
+         {
+            "name": "123. Pistazien Tiramisu",
+            "description": "Cremig, nussig, mit feiner Mascarpone und Pistaziencreme.",
+            "price": "9,00"
+         },
+         {
+            "name": "124. Gemischte Eis mit Sahne",
+            "description": "Schokolade, Vanille und Erdbeere",
+            "price": "7,00"
+         },
+         {
+            "name": "125. Vanilleeis",
+            "description": "Mit Schokoladensauce und Sahne",
+            "price": "7,50"
+         },
+         {
+            "name": "126. Vanilleeis",
+            "description": "Mit heißen Himbeeren",
+            "price": "7,90"
+         }
+      ]
+   },
+   {
+      "id": "18",
+      "name": "Warme Getränke",
+      "menuItems": [
+         {
+            "name": "130. Tasse Kaffee",
+            "price": "3,50"
+         },
+         {
+            "name": "131. Griechischer Kaffee / Mocca",
+            "price": "3,50"
+         },
+         {
+            "name": "132. Espresso",
+            "price": "2,90"
+         },
+         {
+            "name": "133. Espresso Macchiato",
+            "price": "3,50"
+         },
+         {
+            "name": "134. Cappuccino",
+            "price": "3,80"
+         },
+         {
+            "name": "135. Affogato al Caffè",
+            "description": "Köstliches Espresso-Dessert mit Vanilleeis",
+            "price": "5,50"
+         },
+         {
+            "name": "136. Tee",
+            "description": "Pfefferminze, Grüner Tee, Früchte, Kamille",
+            "price": "4,50"
+         }
+      ]
+   },
+   {
+      "id": "19",
+      "name": "Alkoholfreie Getränke",
+      "menuItems": [
+         {
+            "name": "211. Schorle 0,33l",
+            "description": "Apfelsaft, Traubensaft, Orangensaft, Drachensaft",
+            "price": "4,20"
+         },
+         {
+            "name": "212. Fanta 0,33l",
+            "price": "4,20"
+         },
+         {
+            "name": "213. Sprite 0,33l",
+            "price": "4,20"
+         },
+         {
+            "name": "214. Coca-Cola 0,33l",
+            "price": "4,20"
+         },
+         {
+            "name": "215. Cola-Cola Zero 0,33l",
+            "price": "4,20"
+         },
+         {
+            "name": "216. Spezi 0,33l",
+            "price": "4,20"
+         },
+         {
+            "name": "217. Bitter Lemon 0,33l",
+            "price": "4,20"
+         },
+         {
+            "name": "218. Säfte 0,33l",
+            "description": "Apfelsaft, Traubensaft, Orangensaft, Drachensaft",
+            "price": "4,50"
+         },
+         {
+            "name": "219. Acqua Morelli Sparkling 0,25l",
+            "price": "3,90"
+         },
+         {
+            "name": "220. Acqua Morelli non Sparkling 0,25l",
+            "price": "3,90"
+         },
+         {
+            "name": "221. Acqua Morelli Sparkling 0,75l",
+            "price": "7,50"
+         },
+         {
+            "name": "222. Acqua Morelli non Sparkling 0,75l",
+            "price": "7,50"
+         },
+         {
+            "name": "223. Eistee (Flasche) 0,33l",
+            "description": "Acai & Lime, Peach, Blueberry",
+            "price": "4,90"
+         }
+      ]
+   },
+   {
+      "id": "20",
+      "name": "Biere",
+      "description": "Alle Biere enthalten Gluten (A)",
+      "menuItems": [
+         {
+            "name": "301. Helles vom Fass 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "302. Pils vom Fass 0,4l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "303. Dunkel Bier 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "304. Hefeweizen vom Fass 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "305. Alkoholfreies Pils 0,33l",
+            "price": "4,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "306. Dunkel Hefeweizen 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "307. Leichtes Hefeweizen 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "308. Radler 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "309. Russ 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "310. Cola-Weizen 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "311. Alkoholfreies Weizen 0,5l",
+            "price": "4,90",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "21",
+      "name": "Scavi & Ray",
+      "menuItems": [
+         {
+            "name": "Ice Prestige Spumante",
+            "description": "Hier entfaltet sich ein Obstkorb von gelben Früchten wie Pfirsich, Honigmelone, Mirabellen und dazu noch eine leicht florale Note von frischen Rosenblättern. Halbtrocken schmeichelt sich dieser süffige Spumante aus Italien am Gaumen ein. Das Geheimnis dahinter: Eine erlesene Cuvée der italienischen Rebsorten Glera, Verduzzo und Moscato.",
+            "price": "12,50",
+            "priceBottle": "38,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "Luminoso Spumante Extra Dry",
+            "description": "Ein eleganter Extra Dry der Extraklasse mit Noten von frischen hellen Früchten wie Äpfeln, Birnen, Mirabellen und Noten von Pfirsich. Die Perlage ist sanft und unterstreicht die Frische und Saftigkeit. Der Nachhall ist getragen von heller Frucht und Nuancen von Minze.",
+            "price": "69,00",
+            "isPremium": true,
+            "isAgeRestricted": true
+         },
+         {
+            "name": "Prosecco DOC Rosé",
+            "description": "Ein eleganter Extra Dry der Extraklasse mit Noten von frischen hellen Früchten wie Äpfeln, Birnen, Mirabellen und Noten von Pfirsich. Die Perlage ist sanft und unterstreicht die Frische und Saftigkeit. Der Nachhall is getragen von heller Frucht und Nuancen von Minze.",
+            "price": "10,50",
+            "priceBottle": "34,00",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "22",
+      "name": "Spirituosen",
+      "menuItems": [
+         {
+            "name": "351. Ouzo 2cl",
+            "price": "3,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "352. Ouzo Plomari Fl. 200ml",
+            "price": "14,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "353. Tsipouro Tirnavou Fl. 200ml",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "354. Ramazzotti 4cl",
+            "price": "6,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "355. Baileys 4cl",
+            "price": "4,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "356. Metaxa 5 Sterne 2cl",
+            "price": "5,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "357. Metaxa 7 Sterne 2cl",
+            "price": "6,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "358. Metaxa Grand Reserve 2cl",
+            "price": "7,50",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "23",
+      "name": "Weißweine",
+      "menuItems": [
+         {
+            "name": "401. Hauswein Assyrtiko 0,2l",
+            "description": "Trocken",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "402. Lugana 0,2l",
+            "description": "Fruchtig, Trocken",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "403. Retsina Malamatina 0,2l",
+            "description": "Geharzt",
+            "price": "7,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "404. Samos 0,2l",
+            "description": "Dessertwein",
+            "price": "8,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "405. Imiglikos 0,2l",
+            "description": "Lieblich",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "406. Retsina Kechlibari 0,5l",
+            "description": "Geharzt",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "407. Mostra Fl. 0,5l",
+            "description": "Muskat, Chardonnay, Roditis - Trocken",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "408. Mostra Fl. 0,5l",
+            "description": "Muskat, Chardonnay, Roditis - Lieblich",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "409. Weinschorle Weiss 0,4l",
+            "price": "7,00",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "24",
+      "name": "Rotweine",
+      "menuItems": [
+         {
+            "name": "415. Hauswein 0,2l",
+            "description": "Trocken",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "416. Primitivo Salento 0,2l",
+            "description": "Fruchtig, Trocken",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "417. Imiglikos 0,2l",
+            "description": "Lieblich",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "418. Mostra Fl. 0,5l",
+            "description": "Syrah, Argiorgiotiko, Merlo - Trocken",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "419. Mostra Fl. 0,5l",
+            "description": "Syrah, Argiorgiotiko, Merlot - Lieblich",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "420. Weinschorle Rot 0,4l",
+            "price": "7,00",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "25",
+      "name": "Roséweine",
+      "menuItems": [
+         {
+            "name": "425. Hauswein 0,2l",
+            "description": "Trocken",
+            "price": "7,50",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "426. Retsina Malamatina 0,2l",
+            "description": "Geharzt",
+            "price": "7,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "427. Mostra Fl. 0,5l",
+            "description": "Muskat, Syrah, Merlot - Trocken",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "428. Mostra Fl. 0,5l",
+            "description": "Muskat, Syrah, Merlot - Lieblich",
+            "price": "15,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "429. Weinschorle Rosé 0,4l",
+            "price": "7,00",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "26",
+      "name": "Flasche Weiß",
+      "menuItems": [
+         {
+            "name": "Katsaros 4 Generations Flasche",
+            "subtitle": "Thessalien, Griechenland",
+            "description": "Goldgelbe Farbe mit zarten Noten von Rosen und fruchtigen Blumen. Der Duft der Muskat-Traube aus Tirnavos vereint sich mit der Frische und knackigen Säure des Assyrtiko. Ein harmonischer Weißwein, der perfekt zu Fisch- und Pastagerichten passt. Ein exklusiver Tropfen von der 4. Generation der Katsaros-Familie, bekannt für ihre Ouzo-Destillerie.",
+            "price": "36,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "Malagouzia Costa Lazaridi Flasche",
+            "subtitle": "Drama, Griechenland",
+            "description": "Helle, grün-gelbe Farbe. In der Nase intensives Bouquet aus Birnen, Aprikosen und blumigen Noten. Vollmundig im Geschmack mit Pfirsich- und Bergamottnoten. Der Wein überzeugt mit einem samtigen Mundgefühl, ausgewogener Säure und einem harmonischen Abgang. Ideal zu gegrilltem Fisch und hellem Fleisch.",
+            "price": "50,00",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "27",
+      "name": "Flasche Rot",
+      "menuItems": [
+         {
+            "name": "Chateau Julia Agiorgitiko Flasche",
+            "subtitle": "Drama, Griechenland",
+            "description": "Der Chateau Julia Agiorgitiko zeigt sich in tiefroter Farbe mit einem violetten Schimmer. Sein komplexes Bouquet vereint Wildkirschen und Waldfrüchte, die perfekt mit Kokosnuss und Vanille harmonieren. Vollmundig im Geschmack, begleitet von angenehmer Säure und weichen Tanninen, bietet dieser Rotwein ein gutes Reifepotential. Der Abgang ist kräftig und wird durch feine Eichenaromen abgerundet. Ideal zu gegrilltem Fleisch oder gereiftem Käse.",
+            "price": "58,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "Katsaros 4 Generations Flasche",
+            "subtitle": "Thessalien, Griechenland",
+            "description": "Ein harmonischer Rotwein aus den Rebsorten Merlot und Syrah, der mit 12 Gold- und 29 Silbermedaillen ausgezeichnet wurde. Der Wein bietet komplexe Aromen von dunklen Früchten, begleitet von zarten Gewürznoten. Er hat eine ausgewogene Struktur mit weichen Tanninen und einem langen, eleganten Abgang. Ideal zu gegrilltem Fleisch und intensiven Käsesorten.",
+            "price": "39,00",
+            "isAgeRestricted": true
+         }
+      ]
+   },
+   {
+      "id": "28",
+      "name": "Flasche Rosé",
+      "menuItems": [
+         {
+            "name": "Alpha Estate Rosé Flasche",
+            "subtitle": "Florina, Makedonien",
+            "description": "Kräftige rosa Farbe mit lachsfarbenen Akzenten. Aromen von roten Früchten und blumigen Noten, die sich harmonisch mit einem ausdrucksstarken Abgang verbinden. Der Geschmack ist frisch und ausgewogen. Perfekt zu traditionellen griechischen Gerichten, Meze oder gegrilltem Fisch.",
+            "price": "49,00",
+            "isAgeRestricted": true
+         },
+         {
+            "name": "Domaine Costa Lazaridi Flasche",
+            "subtitle": "Drama, Makedonien",
+            "description": "Helle lachsfarbene Tönung. Intensives Bouquet mit Noten von Erdbeere und Zitrone. Der Geschmack ist leicht und erfrischend. Am Gaumen zeigt er sich weich und abgerundet, mit einem ausgewogenen Finish und einem Hauch von Gewürzen. Passt hervorragend sowohl als Aperitif vor dem Mittag- oder Abendessen, zu leichten Vorspeisen sowie zu sommerlichen Gemüse- und Fischgerichten.",
+            "price": "39,00",
+            "isAgeRestricted": true
+         }
+      ]
+   }
+]

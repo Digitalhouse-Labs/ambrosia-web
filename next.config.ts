@@ -1,7 +1,27 @@
 import type { NextConfig } from "next"
+import createNextIntlPlugin from "next-intl/plugin"
 
 const nextConfig: NextConfig = {
-   /* config options here */
+   reactCompiler: true,
+   experimental: {
+      optimizePackageImports: ["@heroui/react"],
+   },
+   turbopack: {
+      rules: {
+         "*.svg": {
+            loaders: [
+               {
+                  loader: "@svgr/webpack",
+                  options: {
+                     dimensions: false,
+                  },
+               },
+            ],
+            as: "*.js",
+         },
+      },
+   },
 }
 
-export default nextConfig
+const withNextIntl = createNextIntlPlugin()
+export default withNextIntl(nextConfig)
