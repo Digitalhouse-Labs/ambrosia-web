@@ -12,15 +12,17 @@ import GooglePay from "../../public/cards/google-pay.svg"
 import Facebook from "../../public/facebook.svg"
 import Instagram from "../../public/instagram.svg"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
 export function InfoModal() {
    const state = useOverlayState()
+   const t = useTranslations("Footer")
 
    return (
       <>
          <Button variant="tertiary" size="sm" onPress={state.toggle}>
             <Info />
-            Πληροφορίες
+            {t("information")}
          </Button>
          <Modal.Container isOpen={state.isOpen} onOpenChange={state.setOpen}>
             <Modal.Dialog className="sm:max-w-[400px]">
@@ -30,16 +32,13 @@ export function InfoModal() {
                      <Modal.Icon className="bg-default text-foreground">
                         <Info className="size-5" />
                      </Modal.Icon>
-                     <Modal.Heading>Πληροφορίες</Modal.Heading>
+                     <Modal.Heading>{t("information")}</Modal.Heading>
                   </Modal.Header>
                   <Modal.Body className="flex flex-col gap-y-4">
-                     <p>
-                        Δες τη διεύθυνση, τα στοιχεία επικοινωνίας και τους
-                        τρόπους πληρωμής μας.
-                     </p>
+                     <p>{t("informationDescription")}</p>
                      <Surface variant="secondary" className="rounded-2xl p-4">
                         <h3 className="text-foreground mb-3">
-                           Μέθοδοι Πληρωμής
+                           {t("paymentMethods")}
                         </h3>
                         <div className="flex flex-wrap items-center gap-3">
                            <MasterCard className="h-auto w-10 shrink-0" />
@@ -52,7 +51,7 @@ export function InfoModal() {
                      </Surface>
                      <Surface variant="secondary" className="rounded-2xl p-4">
                         <h3 className="text-foreground mb-3 font-semibold">
-                           Ακολούθησε μας
+                           {t("followUs")}
                         </h3>
                         <div className="flex flex-wrap items-center gap-x-4">
                            <Link
@@ -73,22 +72,23 @@ export function InfoModal() {
                      </Surface>
                      <Surface variant="secondary" className="rounded-2xl p-4">
                         <h3 className="text-foreground mb-3">
-                           Πληροφορίες Επιχείρησης
+                           {t("businessInformation")}
                         </h3>
-                        <address className="flex flex-wrap items-center gap-x-4">
+                        <address className="flex flex-wrap items-center gap-x-4 not-italic">
                            <ul className="*:text-muted flex flex-col gap-y-1 *:text-xs">
-                              <li>Επωνυμία: Ambrosia Restaurant</li>
+                              <li>{t("companyName")}: Ambrosia Restaurant</li>
                               <li>
                                  Email:{" "}
                                  <a href="mailto:info@ambrosia-rueckersdorf.de">
                                     info@ambrosia-rueckersdorf.de
                                  </a>
                               </li>
-                              <li>Τηλέφωνο: +49 911 860 442 77</li>
+                              <li>{t("phone")}: +49 911 860 442 77</li>
                               <li>
-                                 Διεύθυνση: Hauptstraße 37, 90607 Rückersdorf
+                                 {t("address")}: Hauptstraße 37, 90607
+                                 Rückersdorf
                               </li>
-                              <li>St.-Nr-.: 221/274 70670</li>
+                              <li>{t("taxId")}: 221/274 70670</li>
                            </ul>
                         </address>
                      </Surface>

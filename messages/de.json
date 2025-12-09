@@ -19,9 +19,58 @@
       "reservation": "Jetzt reservieren",
       "callUs": "Rufen Sie uns an",
       "directions": "Route planen",
-      "close": "Schließen"
+      "close": "Schließen",
+      "appearance": "Aussehen"
    },
    "Header": {
       "booking": "Jetzt reservieren"
+   },
+   "Footer": {
+      "information": "Informationen",
+      "informationDescription": "Sehen Sie unsere Adresse, Kontaktdaten und Zahlungsmethoden.",
+      "followUs": "Folgen Sie uns",
+      "businessInformation": "Unternehmens informationen",
+      "companyName": "Firmenname",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "paymentMethods": "Zahlungsmethoden",
+      "taxId": "St.-Nr.",
+      "review": "Bewerten Sie uns"
+   },
+   "Menu": {
+      "categories": "Kategories"
+   },
+   "ReservationForm": {
+      "title": "Ambrosia Tischreservierung",
+      "descriptionForm": "Reservieren Sie bequem online einen Tisch im Ambrosia. Schnell, einfach und zuverlässig wir freuen uns auf Ihren Besuch.",
+      "firstName": "Vorname",
+      "firstNamePlaceholder": "Vorname eingeben",
+      "lastName": "Nachname",
+      "lastNamePlaceholder": "Nachname eingeben",
+      "email": "E-Mail",
+      "emailPlaceholder": "E-Mail eingeben",
+      "telephone": "Telefon",
+      "telephonePlaceholder": "Telefonnummer eingeben",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "persons": "Anzahl der Personen",
+      "personsPlaceholder": "Wie viele Personen?",
+      "occasion": "Anlass",
+      "occasionPlaceholder": "Anlass auswählen",
+      "occasionBirthday": "Geburtstagsfeier",
+      "occasionAnniversary": "Jahrestag",
+      "occasionBusiness": "Geschäftstreffen",
+      "occasionDate": "Verabredungsabend",
+      "occasionFamily": "Familientreffen",
+      "occasionOther": "Andere",
+      "description": "Beschreibung (Optional)",
+      "descriptionPlaceholder": "Besondere Wünsche oder Anmerkungen?",
+      "submit": "Reservierung absenden",
+      "submitting": "Wird gesendet...",
+      "success": "Reservierung erfolgreich gesendet!",
+      "error": "Fehler",
+      "successTitle": "Vielen Dank!",
+      "successMessage": "Ihre Reservierung wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
+      "backToHome": "Zurück zur Startseite"
    }
 }

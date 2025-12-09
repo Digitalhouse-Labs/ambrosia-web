@@ -9,14 +9,16 @@ export default async function Home() {
    const t = await getTranslations("HomePage")
    const data = await getReviews()
    return (
-      <div className="">
-         <Cover />
+      <>
+         <div className="relative">
+            <Cover />
 
-         <div className="absolute inset-x-0 bottom-6">
-            <div className="max-w-9xl mx-auto flex items-end justify-end px-3">
-               <Suspense fallback={<GoogleReviewsLoading />}>
-                  <GoogleReviews data={data} />
-               </Suspense>
+            <div className="absolute inset-x-0 bottom-6">
+               <div className="max-w-9xl mx-auto flex items-end justify-end px-3">
+                  <Suspense fallback={<GoogleReviewsLoading />}>
+                     <GoogleReviews data={data} />
+                  </Suspense>
+               </div>
             </div>
          </div>
 
@@ -28,6 +30,6 @@ export default async function Home() {
                </p>
             </div>
          </div>
-      </div>
+      </>
    )
 }

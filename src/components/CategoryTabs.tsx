@@ -12,6 +12,7 @@ import {
 import { Category } from "@/lib/types"
 import { useScrollSpy } from "@/hooks/use-scroll-spy"
 import { ListChevronsDownUp } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 interface CategoryTabsProps {
    categories: Category[]
@@ -24,6 +25,7 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
    const listRef = useRef<HTMLDivElement>(null)
    const stickyRef = useRef<HTMLDivElement>(null)
    const [isSticky, setIsSticky] = useState(false)
+   const t = useTranslations("Menu")
 
    useEffect(() => {
       const el = stickyRef.current
@@ -112,7 +114,7 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
                <Button
                   isIconOnly
                   variant="tertiary"
-                  aria-label="Όλες οι κατηγορίες"
+                  aria-label={t("categories")}
                   onPress={modal.open}
                >
                   <ListChevronsDownUp />
@@ -126,7 +128,7 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
                      <Modal.CloseTrigger />
                      <Modal.Header>
                         <Modal.Heading className="font-semibold">
-                           Κατηγορίες
+                           {t("categories")}
                         </Modal.Heading>
                      </Modal.Header>
                      <Modal.Body>

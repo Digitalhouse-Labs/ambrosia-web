@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing"
 import { notFound } from "next/navigation"
 import { setRequestLocale } from "next-intl/server"
 import Header from "@/components/Header"
+import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -42,20 +43,21 @@ export default async function RootLayout({
       notFound()
    }
 
-   // Enable static rendering
    setRequestLocale(locale)
 
    return (
       <html
+         suppressHydrationWarning
          lang={locale}
-         className={`${inter.className} light scrollbar-hidden`}
-         data-theme="light"
+         className={`${inter.className} scrollbar-hidden`}
       >
-         <body className="bg-background text-foreground flex min-h-screen flex-col antialiased">
-            <NextIntlClientProvider>
-               <Header />
-               {children}
-            </NextIntlClientProvider>
+         <body className="bg-background text-foreground antialiased">
+            <ThemeProviderNext>
+               <NextIntlClientProvider>
+                  <Header />
+                  {children}
+               </NextIntlClientProvider>
+            </ThemeProviderNext>
          </body>
       </html>
    )

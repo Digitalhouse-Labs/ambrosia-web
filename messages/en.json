@@ -19,9 +19,58 @@
       "reservation": "Make a reservation",
       "callUs": "Call us",
       "directions": "Get directions",
-      "close": "Close"
+      "close": "Close",
+      "appearance": "Appearance"
    },
    "Header": {
       "booking": "Book a Table"
+   },
+   "Footer": {
+      "information": "Information",
+      "informationDescription": "See our address, contact details and payment methods.",
+      "followUs": "Follow us",
+      "businessInformation": "Business Information",
+      "companyName": "Company Name",
+      "phone": "Phone",
+      "address": "Address",
+      "paymentMethods": "Payment Methods",
+      "taxId": "Tax ID",
+      "review": "Review us"
+   },
+   "Menu": {
+      "categories": "Kategories"
+   },
+   "ReservationForm": {
+      "title": "Ambrosia - Table Reservation",
+      "descriptionForm": "Reserve your table at Ambrosia easily online. Fast, simple, and reliable we look forward to welcoming you.",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "email": "Email",
+      "emailPlaceholder": "Enter your email",
+      "telephone": "Telephone",
+      "telephonePlaceholder": "Enter your phone number",
+      "date": "Date",
+      "time": "Time",
+      "persons": "Number of Persons",
+      "personsPlaceholder": "How many persons?",
+      "occasion": "Occasion",
+      "occasionPlaceholder": "Select an occasion",
+      "occasionBirthday": "Birthday Party",
+      "occasionAnniversary": "Anniversary",
+      "occasionBusiness": "Business Meeting",
+      "occasionDate": "Date Night",
+      "occasionFamily": "Family Gathering",
+      "occasionOther": "Other",
+      "description": "Description (Optional)",
+      "descriptionPlaceholder": "Any special requests or notes?",
+      "submit": "Submit Reservation",
+      "submitting": "Submitting...",
+      "success": "Reservation submitted successfully!",
+      "error": "Error",
+      "successTitle": "Thank You!",
+      "successMessage": "Your reservation has been successfully submitted. We will contact you shortly.",
+      "backToHome": "Back to Home"
    }
 }

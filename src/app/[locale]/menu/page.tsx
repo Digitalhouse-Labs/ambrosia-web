@@ -9,7 +9,7 @@ import { CategoryTabs } from "@/components/CategoryTabs"
 import GoogleReview from "@/components/GoogleReviewButton"
 import CoverMenu from "@/components/CoverMenu"
 
-export default async function Home() {
+export default async function Page() {
    const menu = await getMenu()
    return (
       <main>

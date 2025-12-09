@@ -1,7 +1,10 @@
 import Link from "next/link"
 import GoogleLogo from "../../public/google-icon-logo.svg"
+import { useTranslations } from "next-intl"
 
 export default function GoogleReviewButton() {
+   const t = useTranslations("Footer")
+
    return (
       <div className="sticky bottom-3 z-50">
          <Link
@@ -11,7 +14,7 @@ export default function GoogleReviewButton() {
             className="button button--lg button--tertiary h-16 w-full gap-3"
          >
             <GoogleLogo className="size-4" />
-            Γράψτε μας κριτική
+            {t("review")}
          </Link>
       </div>
    )
