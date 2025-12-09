@@ -8,6 +8,7 @@ import { notFound } from "next/navigation"
 import { setRequestLocale } from "next-intl/server"
 import Header from "@/components/Header"
 import { ThemeProviderNext } from "@/components/ThemeProviderNext"
+import { GoogleAnalytics } from "@next/third-parties/google"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -59,6 +60,9 @@ export default async function RootLayout({
                </NextIntlClientProvider>
             </ThemeProviderNext>
          </body>
+         {process.env.NEXT_PUBLIC_GA_ID && (
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+         )}
       </html>
    )
 }
