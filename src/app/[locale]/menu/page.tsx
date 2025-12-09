@@ -19,7 +19,7 @@ export default async function Page() {
                <div className="flex flex-col gap-y-3">
                   <div className="bg-background border-surface size-20 rounded-full border">
                      <div className="flex h-full items-center justify-center">
-                        <LogoCircle className="fill-foreground h-auto w-14 shrink-0" />
+                        <LogoCircle className="fill-foreground h-auto w-14 shrink-0 md:w-16" />
                      </div>
                   </div>
                   <ProfileHeader />

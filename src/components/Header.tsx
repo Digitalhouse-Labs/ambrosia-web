@@ -2,11 +2,11 @@
 
 import LogoAlt from "../../public/logo-alt.svg"
 import Logo from "../../public/logo.svg"
-import Link from "next/link"
 import { Button } from "@heroui/react"
 import { CalendarCheck } from "lucide-react"
 import MenuModal from "@/components/MenuModal"
 import { useTranslations } from "next-intl"
+import { Link } from "@/i18n/navigation"
 
 export default function Header() {
    const t = useTranslations("Header")
@@ -35,16 +35,21 @@ export default function Header() {
                   </Link>
                </div>
                <div className="flex grow basis-0 justify-end gap-3">
-                  <Button variant="tertiary" className="hidden md:flex">
-                     <CalendarCheck />
-                     {t("booking")}
+                  <Button variant="tertiary" asChild className="hidden md:flex">
+                     <Link href="/reservation">
+                        <CalendarCheck />
+                        {t("booking")}
+                     </Link>
                   </Button>
                   <Button
-                     isIconOnly
                      variant="tertiary"
+                     isIconOnly
+                     asChild
                      className="flex md:hidden"
                   >
-                     <CalendarCheck />
+                     <Link href="/reservation">
+                        <CalendarCheck />
+                     </Link>
                   </Button>
                </div>
             </div>

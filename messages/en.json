@@ -1,7 +1,9 @@
 {
    "HomePage": {
       "title": "Hello world!",
-      "description": "At Ambrosia Restaurant, every dish is a tribute to Greek tradition and every moment is crafted for today. We unite the warmth of Greek hospitality, the richness of timeless flavors, and the spirit of modern life."
+      "description": "At Ambrosia Restaurant, every dish is a tribute to Greek tradition and every moment is crafted for today. We unite the warmth of Greek hospitality, the richness of timeless flavors, and the spirit of modern life.",
+      "houseFavorites": "House Favorites",
+      "viewFullMenu": "View Full Menu"
    },
    "LocaleSwitcher": {
       "label": "Change language",

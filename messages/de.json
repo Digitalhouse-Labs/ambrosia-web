@@ -1,7 +1,9 @@
 {
    "HomePage": {
       "title": "Willkommen!",
-      "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit."
+      "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit.",
+      "houseFavorites": "Haus-Spezialitäten",
+      "viewFullMenu": "Zur Speisekarte"
    },
    "LocaleSwitcher": {
       "label": "Sprache ändern",
@@ -44,13 +46,13 @@
       "title": "Ambrosia Tischreservierung",
       "descriptionForm": "Reservieren Sie bequem online einen Tisch im Ambrosia. Schnell, einfach und zuverlässig wir freuen uns auf Ihren Besuch.",
       "firstName": "Vorname",
-      "firstNamePlaceholder": "Vorname eingeben",
+      "firstNamePlaceholder": "Vorname",
       "lastName": "Nachname",
-      "lastNamePlaceholder": "Nachname eingeben",
+      "lastNamePlaceholder": "Nachname",
       "email": "E-Mail",
-      "emailPlaceholder": "E-Mail eingeben",
+      "emailPlaceholder": "E-Mail",
       "telephone": "Telefon",
-      "telephonePlaceholder": "Telefonnummer eingeben",
+      "telephonePlaceholder": "Telefonnummer",
       "date": "Datum",
       "time": "Uhrzeit",
       "persons": "Anzahl der Personen",

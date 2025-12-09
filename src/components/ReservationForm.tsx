@@ -68,16 +68,16 @@ export function ReservationForm() {
          </div>
          <div className="max-w-9xl relative z-10 mx-auto px-3">
             {state.success ? (
-               <Card className="w-full text-center md:max-w-md">
-                  <Card.Content className="flex flex-col items-center gap-6 py-3 md:py-12">
+               <Card className="w-full md:max-w-md">
+                  <Card.Content className="flex flex-col items-center gap-6 py-3 text-center md:py-12">
                      <div className="bg-default flex size-20 items-center justify-center rounded-full">
                         <Check className="text-success size-12" />
                      </div>
-                     <div>
+                     <div className="space-y-2">
                         <h2 className="text-2xl font-bold">
                            {t("successTitle")}
                         </h2>
-                        <p className="mt-2">{t("successMessage")}</p>
+                        <p>{t("successMessage")}</p>
                      </div>
                      <Button variant="tertiary" asChild>
                         <Link href="/">{t("backToHome")}</Link>
@@ -85,7 +85,7 @@ export function ReservationForm() {
                   </Card.Content>
                </Card>
             ) : (
-               <Card className="w-full md:max-w-md">
+               <Card className="w-full md:max-w-lg">
                   <Card.Header>
                      <Card.Title>{t("title")}</Card.Title>
                      <Card.Description>{t("descriptionForm")}</Card.Description>
@@ -124,8 +124,10 @@ export function ReservationForm() {
                         <TextField isRequired name="telephone" type="tel">
                            <Label>{t("telephone")}</Label>
                            <Input
+                              type="tel"
                               className="h-14"
-                              placeholder={t("telephonePlaceholder")}
+                              pattern="[\+]?[0-9\s\-]{6,18}"
+                              placeholder="+49 123 4567890"
                            />
                            <FieldError />
                         </TextField>
@@ -147,9 +149,10 @@ export function ReservationForm() {
                         <TextField isRequired name="persons" type="number">
                            <Label>{t("persons")}</Label>
                            <Input
+                              min={1}
+                              max={20}
                               className="h-14"
                               placeholder={t("personsPlaceholder")}
-                              min={1}
                            />
                            <FieldError />
                         </TextField>

@@ -22,6 +22,7 @@ export function ThemeSwitch() {
             onPress={() => setTheme("system")}
             aria-label="System theme"
             size="lg"
+            className="opacity-70"
          >
             <Monitor className="size-5" />
          </Button>
@@ -31,6 +32,7 @@ export function ThemeSwitch() {
             onPress={() => setTheme("light")}
             aria-label="Light theme"
             size="lg"
+            className="opacity-70"
          >
             <SunMedium className="size-5" />
          </Button>
@@ -40,6 +42,7 @@ export function ThemeSwitch() {
             onPress={() => setTheme("dark")}
             aria-label="Dark theme"
             size="lg"
+            className="opacity-70"
          >
             <MoonStar className="size-5" />
          </Button>

@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, CloseButton, Modal } from "@heroui/react"
+import { Button, CloseButton, Modal, Surface } from "@heroui/react"
 import Hamburger from "../../public/hamburger.svg"
 import {
    BookOpen,
@@ -36,7 +36,7 @@ export default function MenuModal() {
       <Modal key={pathname}>
          <Modal.Trigger>
             <div className="group flex items-center gap-2">
-               <Hamburger className="ease-out-quart text-foreground size-9 group-hover:scale-[0.97] group-hover:transition-transform" />
+               <Hamburger className="ease-out-quart size-9 group-hover:scale-[0.97] group-hover:transition-transform" />
                <span className="hidden text-sm font-medium md:flex">
                   {t("menu")}
                </span>
@@ -55,10 +55,6 @@ export default function MenuModal() {
                         </div>
                      </Modal.Header>
                      <Modal.Body className="flex flex-col gap-y-1 p-3">
-                        <div className="mb-3 flex flex-col gap-y-3">
-                           {t("appearance")}
-                           <ThemeSwitch />
-                        </div>
                         <Button
                            variant="ghost"
                            onPress={() => handleNavigateHome(close)}
@@ -69,24 +65,30 @@ export default function MenuModal() {
                            <Home className="size-6" />
                            {t("home")}
                         </Button>
-                        <Link
-                           href="/menu"
-                           className={`button button--md button--ghost min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70 ${
+                        <Button
+                           variant="ghost"
+                           asChild
+                           className={`min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70 ${
                               isMenu ? "bg-default/80" : ""
                            }`}
                         >
-                           <BookOpen className="size-6" />
-                           {t("menuCard")}
-                        </Link>
-                        <Link
-                           href="/reservation"
-                           className={`button button--md button--ghost min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70 ${
+                           <Link href="/menu">
+                              <BookOpen className="size-6" />
+                              {t("menuCard")}
+                           </Link>
+                        </Button>
+                        <Button
+                           variant="ghost"
+                           asChild
+                           className={`min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70 ${
                               isReservation ? "bg-default/80" : ""
                            }`}
                         >
-                           <CalendarCheck className="size-6" />
-                           {t("reservation")}
-                        </Link>
+                           <Link href="/reservation">
+                              <CalendarCheck className="size-6" />
+                              {t("reservation")}
+                           </Link>
+                        </Button>
                         <a
                            href="tel:+4991186044277"
                            className="button button--md button--ghost min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70"
@@ -105,6 +107,15 @@ export default function MenuModal() {
                            <ExternalLink className="size-4" />
                         </a>
                         <LocaleSwitcher />
+                        <Surface
+                           variant="default"
+                           className="mt-3 rounded-2xl p-3"
+                        >
+                           <div className="flex flex-col gap-y-3">
+                              {t("appearance")}
+                              <ThemeSwitch />
+                           </div>
+                        </Surface>
                      </Modal.Body>
                   </>
                )}
