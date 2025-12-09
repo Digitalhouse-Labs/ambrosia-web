@@ -44,7 +44,7 @@ export async function sendEmail(
 
    try {
       const { data, error } = await resend.emails.send({
-         from: "reservierung@ambrosia-rueckersdorf.de",
+         from: "reservierung@notifications.ambrosia-rueckersdorf.de",
          to: ["info@ambrosia-rueckersdorf.de"],
          subject: `Neue Reservierung von ${firstName} ${lastName}`,
          react: EmailTemplate({
