@@ -96,7 +96,7 @@ export function ReservationForm() {
                            <TextField isRequired name="firstName">
                               <Label>{t("firstName")}</Label>
                               <Input
-                                 className="h-14"
+                                 className="h-14 text-base"
                                  placeholder={t("firstNamePlaceholder")}
                               />
                               <FieldError />
@@ -105,7 +105,7 @@ export function ReservationForm() {
                            <TextField isRequired name="lastName">
                               <Label>{t("lastName")}</Label>
                               <Input
-                                 className="h-14"
+                                 className="h-14 text-base"
                                  placeholder={t("lastNamePlaceholder")}
                               />
                               <FieldError />
@@ -115,7 +115,7 @@ export function ReservationForm() {
                         <TextField isRequired name="email" type="email">
                            <Label>{t("email")}</Label>
                            <Input
-                              className="h-14"
+                              className="h-14 text-base"
                               placeholder={t("emailPlaceholder")}
                            />
                            <FieldError />
@@ -125,7 +125,7 @@ export function ReservationForm() {
                            <Label>{t("telephone")}</Label>
                            <Input
                               type="tel"
-                              className="h-14"
+                              className="h-14 text-base"
                               pattern="[\+]?[0-9\s\-]{6,18}"
                               placeholder="+49 123 4567890"
                            />
@@ -135,13 +135,13 @@ export function ReservationForm() {
                         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
                            <TextField isRequired name="date" type="date">
                               <Label>{t("date")}</Label>
-                              <Input min={today} className="h-14" />
+                              <Input min={today} className="h-14 text-base" />
                               <FieldError />
                            </TextField>
 
                            <TextField isRequired name="time" type="time">
                               <Label>{t("time")}</Label>
-                              <Input className="h-14" />
+                              <Input className="h-14 text-base" />
                               <FieldError />
                            </TextField>
                         </div>
@@ -151,7 +151,7 @@ export function ReservationForm() {
                            <Input
                               min={1}
                               max={20}
-                              className="h-14"
+                              className="h-14 text-base"
                               placeholder={t("personsPlaceholder")}
                            />
                            <FieldError />
@@ -189,6 +189,7 @@ export function ReservationForm() {
                            <Label>{t("description")}</Label>
                            <TextArea
                               rows={6}
+                              className="text-base"
                               placeholder={t("descriptionPlaceholder")}
                            />
                            <FieldError />

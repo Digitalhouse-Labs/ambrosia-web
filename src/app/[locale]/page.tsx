@@ -22,7 +22,7 @@ export default async function Home() {
          <div className="relative">
             <Cover />
 
-            <div className="absolute inset-x-0 bottom-6">
+            <div className="absolute inset-x-0 bottom-3 md:bottom-6">
                <div className="max-w-9xl mx-auto flex items-end justify-end px-3">
                   <Suspense fallback={<GoogleReviewsLoading />}>
                      <GoogleReviews data={reviews} />
@@ -35,7 +35,7 @@ export default async function Home() {
             <div className="max-w-8xl mx-auto px-3">
                <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20">
                   <div className="space-y-6">
-                     <div className="flex justify-between gap-3">
+                     <div className="flex items-start justify-between gap-3">
                         <h2 className="text-5xl font-extralight">
                            {t("houseFavorites")}
                         </h2>

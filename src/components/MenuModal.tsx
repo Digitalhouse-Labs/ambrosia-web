@@ -108,7 +108,7 @@ export default function MenuModal() {
                         </a>
                         <LocaleSwitcher />
                         <Surface
-                           variant="default"
+                           variant="secondary"
                            className="mt-3 rounded-2xl p-3"
                         >
                            <div className="flex flex-col gap-y-3">

@@ -5,7 +5,7 @@ import cover from "../../public/cover.jpg"
 
 export default function CoverMenu() {
    return (
-      <div className="relative -mt-20 h-[20svh] overflow-hidden">
+      <div className="relative -mt-20 h-[25svh] overflow-hidden md:h-[30svh]">
          <Image
             src={cover}
             fill

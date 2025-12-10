@@ -14,7 +14,7 @@ export default function HomeMenuList({ items }: MenuListProps) {
 
    return (
       <>
-         <ul className="divide--200 divide-default flex flex-col divide-y *:py-4">
+         <ul className="divide-default flex flex-col divide-y *:py-4">
             {items.map((item, index) => (
                <li key={index} className="flex justify-between">
                   <div>
