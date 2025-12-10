@@ -104,7 +104,16 @@
          "Souvlaki Nuremberg",
          "Greek specialties",
          "Restaurant Rueckersdorf",
-         "Ambrosia Restaurant"
+         "Ambrosia Restaurant",
+         "Greek cuisine Bavaria"
       ]
+   },
+   "MenuPage": {
+      "metaTitle": "Menu | Ambrosia Restaurant Rückersdorf",
+      "metaDescription": "Discover our Greek specialties: Gyros, Souvlaki, fresh fish and more. Authentic Greek cuisine in Rueckersdorf."
+   },
+   "ReservationPage": {
+      "metaTitle": "Book a Table | Ambrosia Restaurant Rueckersdorf",
+      "metaDescription": "Reserve your table now at Ambrosia Restaurant in Rueckersdorf near Nuremberg. Quick and easy online reservation."
    }
 }

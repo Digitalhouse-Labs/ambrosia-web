@@ -107,7 +107,16 @@
          "Souvlaki Nürnberg",
          "griechische Spezialitäten",
          "Restaurant Rückersdorf",
-         "Ambrosia Restaurant"
+         "Ambrosia Restaurant",
+         "Griechische Küche Bayern"
       ]
+   },
+   "MenuPage": {
+      "metaTitle": "Speisekarte | Ambrosia Restaurant Rückersdorf",
+      "metaDescription": "Entdecken Sie unsere griechischen Spezialitäten: Gyros, Souvlaki, frischer Fisch und mehr. Authentische griechische Küche in Rückersdorf."
+   },
+   "ReservationPage": {
+      "metaTitle": "Tisch reservieren | Ambrosia Restaurant",
+      "metaDescription": "Reservieren Sie jetzt Ihren Tisch im Ambrosia Restaurant in Rückersdorf bei Nürnberg. Online-Reservierung schnell und einfach."
    }
 }

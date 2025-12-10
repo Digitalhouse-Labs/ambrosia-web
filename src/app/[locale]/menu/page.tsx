@@ -8,6 +8,22 @@ import { MenuListSkeleton } from "@/components/MenuListSkeleton"
 import { CategoryTabs } from "@/components/CategoryTabs"
 import GoogleReview from "@/components/GoogleReviewButton"
 import CoverMenu from "@/components/CoverMenu"
+import { getTranslations } from "next-intl/server"
+import { Metadata } from "next"
+
+type Props = {
+   params: Promise<{ locale: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+   const { locale } = await params
+   const t = await getTranslations({ locale, namespace: "MenuPage" })
+
+   return {
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+   }
+}
 
 export default async function Page() {
    const menu = await getMenu()

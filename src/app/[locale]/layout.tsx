@@ -10,6 +10,7 @@ import Header from "@/components/Header"
 import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { RecaptchaProvider } from "@/components/RecaptchaProvider"
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -158,6 +159,7 @@ export default async function RootLayout({
          className={`${inter.className} scrollbar-hidden`}
       >
          <body className="bg-background text-foreground antialiased">
+            <ServiceWorkerRegister />
             <RecaptchaProvider>
                <ThemeProviderNext>
                   <NextIntlClientProvider>
