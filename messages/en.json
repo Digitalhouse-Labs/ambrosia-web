@@ -76,12 +76,12 @@
       "backToHome": "Back to Home"
    },
    "Gallery": {
-      "alt1": "Amethystos Greek red wine at Restaurant Ambrosia Rückersdorf",
+      "alt1": "Amethystos Greek red wine at Restaurant Ambrosia Rueckersdorf",
       "alt2": "Garides shrimp with rice - Greek seafood specialty",
       "alt3": "Skordopsomo - Greek garlic bread fresh from the oven",
       "alt4": "Souvlaki with calamari and rice - Greek grilled dish",
-      "alt5": "Greek restaurant Ambrosia interior Rückersdorf",
-      "alt6": "Cozy atmosphere at Restaurant Ambrosia Rückersdorf",
+      "alt5": "Greek restaurant Ambrosia interior Rueckersdorf",
+      "alt6": "Cozy atmosphere at Restaurant Ambrosia Rueckersdorf",
       "alt7": "Restaurant Ambrosia wall painting Greek decoration",
       "alt8": "Galaktobouriko - Traditional Greek semolina custard dessert",
       "alt9": "Baklava - Greek honey nut pastry dessert",
@@ -90,6 +90,21 @@
       "alt12": "Greek Ouzo - Traditional aperitif from Greece",
       "alt13": "Amethystos white wine from Greece",
       "galleryTitle": "Insights",
-      "galleryDescription": "Authentic Greek cuisine in the heart of Rückersdorf"
+      "galleryDescription": "Authentic Greek cuisine in the heart of Rueckersdorf"
+   },
+   "Metadata": {
+      "title": "Ambrosia | Greek Restaurant in Rueckersdorf near Nuremberg",
+      "description": "Authentic Greek dining in Rueckersdorf. Gyros, Souvlaki, seafood and Greek specialties.",
+      "ogDescription": "Enjoy authentic Greek cuisine in a cozy atmosphere. Your Greek restaurant in Rueckersdorf.",
+      "keywords": [
+         "Greek restaurant Rueckersdorf",
+         "Greek restaurant near Nuremberg",
+         "Greek food Nuremberg",
+         "Gyros Rueckersdorf",
+         "Souvlaki Nuremberg",
+         "Greek specialties",
+         "Restaurant Rueckersdorf",
+         "Ambrosia Restaurant"
+      ]
    }
 }
