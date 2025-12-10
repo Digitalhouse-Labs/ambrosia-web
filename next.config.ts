@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
    experimental: {
       optimizePackageImports: ["@heroui/react", "lucide-react"],
    },
+   images: {
+      formats: ["image/avif", "image/webp"],
+   },
    turbopack: {
       rules: {
          "*.svg": {
