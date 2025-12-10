@@ -9,7 +9,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import Header from "@/components/Header"
 import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 import { GoogleAnalytics } from "@next/third-parties/google"
-import { RecaptchaProvider } from "@/components/RecaptchaProvider"
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister"
 
 export const viewport: Viewport = {
@@ -160,14 +159,12 @@ export default async function RootLayout({
       >
          <body className="bg-background text-foreground antialiased">
             <ServiceWorkerRegister />
-            <RecaptchaProvider>
-               <ThemeProviderNext>
-                  <NextIntlClientProvider>
-                     <Header />
-                     <main>{children}</main>
-                  </NextIntlClientProvider>
-               </ThemeProviderNext>
-            </RecaptchaProvider>
+            <ThemeProviderNext>
+               <NextIntlClientProvider>
+                  <Header />
+                  <main>{children}</main>
+               </NextIntlClientProvider>
+            </ThemeProviderNext>
             <script
                type="application/ld+json"
                dangerouslySetInnerHTML={{
