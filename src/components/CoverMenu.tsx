@@ -9,6 +9,7 @@ export default function CoverMenu() {
          <Image
             src={cover}
             fill
+            priority
             loading="eager"
             alt="Ambrosia restaurant"
             className="object-cover"
