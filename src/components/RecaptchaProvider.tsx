@@ -15,6 +15,7 @@ export function RecaptchaProvider({ children }: { children: ReactNode }) {
          }}
          container={{
             parameters: {
+               badge: "bottomright",
                theme: "dark",
             },
          }}
