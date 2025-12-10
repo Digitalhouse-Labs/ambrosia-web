@@ -31,7 +31,7 @@ export async function generateMetadata({
    return {
       metadataBase: new URL("https://www.ambrosia-rueckersdorf.de"),
       alternates: {
-         canonical: "/",
+         canonical: `/${locale}`,
          languages: {
             "de-DE": "/de",
             "en-US": "/en",
