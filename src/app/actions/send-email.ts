@@ -15,6 +15,35 @@ export async function sendEmail(
    prevState: EmailState,
    formData: FormData,
 ): Promise<EmailState> {
+   const recaptchaToken = formData.get("recaptchaToken") as string
+
+   if (!recaptchaToken) {
+      return {
+         success: false,
+         error: "reCAPTCHA verification failed",
+         data: null,
+      }
+   }
+
+   const recaptchaResponse = await fetch(
+      "https://www.google.com/recaptcha/api/siteverify",
+      {
+         method: "POST",
+         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+         body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptchaToken}`,
+      },
+   )
+
+   const recaptchaData = await recaptchaResponse.json()
+
+   if (!recaptchaData.success || recaptchaData.score < 0.5) {
+      return {
+         success: false,
+         error: "reCAPTCHA verification failed",
+         data: null,
+      }
+   }
+
    const firstName = formData.get("firstName") as string
    const lastName = formData.get("lastName") as string
    const email = formData.get("email") as string

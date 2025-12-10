@@ -1,6 +1,6 @@
 "use client"
 
-import { useActionState, useEffect } from "react"
+import { useActionState, useCallback, useEffect } from "react"
 import { useTranslations } from "next-intl"
 import {
    Button,
@@ -20,6 +20,7 @@ import Image from "next/image"
 import confetti from "canvas-confetti"
 import { Check } from "lucide-react"
 import { Link } from "@/i18n/navigation"
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
 
 const initialState: EmailState = {
    success: false,
@@ -28,6 +29,8 @@ const initialState: EmailState = {
 }
 
 export function ReservationForm() {
+   const { executeRecaptcha } = useGoogleReCaptcha()
+
    const t = useTranslations("ReservationForm")
    const [state, formAction, isPending] = useActionState(
       sendEmail,
@@ -54,6 +57,21 @@ export function ReservationForm() {
          })
       }
    }, [state.success])
+
+   const handleSubmit = useCallback(
+      async (formData: FormData) => {
+         if (!executeRecaptcha) {
+            console.log("Execute recaptcha not yet available")
+            return
+         }
+
+         const token = await executeRecaptcha("reservation")
+         formData.append("recaptchaToken", token)
+
+         formAction(formData)
+      },
+      [executeRecaptcha, formAction],
+   )
 
    return (
       <div className="relative flex min-h-[calc(100svh-5rem)] items-center justify-start py-3 md:py-6">
@@ -90,7 +108,7 @@ export function ReservationForm() {
                      <Card.Title>{t("title")}</Card.Title>
                      <Card.Description>{t("descriptionForm")}</Card.Description>
                   </Card.Header>
-                  <Form action={formAction}>
+                  <Form action={handleSubmit}>
                      <Card.Content className="flex flex-col gap-4">
                         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
                            <TextField isRequired name="firstName">
