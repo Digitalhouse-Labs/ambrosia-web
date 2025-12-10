@@ -12,6 +12,11 @@ export function RecaptchaProvider({ children }: { children: ReactNode }) {
             defer: true,
             appendTo: "body",
          }}
+         container={{
+            parameters: {
+               theme: "dark",
+            },
+         }}
       >
          {children}
       </GoogleReCaptchaProvider>
