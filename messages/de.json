@@ -74,5 +74,22 @@
       "successTitle": "Vielen Dank!",
       "successMessage": "Ihre Reservierung wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
       "backToHome": "Zurück zur Startseite"
+   },
+   "Gallery": {
+      "alt1": "Amethystos griechischer Rotwein im Restaurant Ambrosia Rückersdorf",
+      "alt2": "Garides Garnelen mit Reis - Griechische Meeresfrüchte Spezialität",
+      "alt3": "Skordopsomo - Griechisches Knoblauchbrot frisch aus dem Ofen",
+      "alt4": "Souvlaki mit Calamari und Reis - Griechisches Gericht vom Grill",
+      "alt5": "Griechisches Restaurant Ambrosia Innenansicht Rückersdorf",
+      "alt6": "Gemütliche Atmosphäre im Restaurant Ambrosia Rückersdorf",
+      "alt7": "Restaurant Ambrosia Wandgemälde griechische Dekoration",
+      "alt8": "Galaktobouriko - Traditionelles griechisches Dessert mit Grießcreme",
+      "alt9": "Baklava - Griechisches Honig-Nuss-Gebäck Dessert",
+      "alt10": "Loukoumades - Griechische Honigbällchen Nachspeise",
+      "alt11": "Metaxa und Chivas Whisky Auswahl an der Bar",
+      "alt12": "Griechischer Ouzo - Traditioneller Aperitif aus Griechenland",
+      "alt13": "Amethystos Weißwein aus Griechenland",
+      "galleryTitle": "Einblicke",
+      "galleryDescription": "Authentische griechische Küche im Herzen von Rückersdorf"
    }
 }

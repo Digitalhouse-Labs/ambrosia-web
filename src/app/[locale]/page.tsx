@@ -7,6 +7,7 @@ import { getTranslations } from "next-intl/server"
 import { getMenu } from "@/lib/products"
 import LogoCircle from "../../../public/logo-circle.svg"
 import HomeMenuList from "@/components/HomeMenuList"
+import Gallery from "@/components/ImageSlider"
 
 export default async function Home() {
    const t = await getTranslations("HomePage")
@@ -31,9 +32,9 @@ export default async function Home() {
             </div>
          </div>
 
-         <div className="py-12 md:py-20">
+         <div className="py-16 md:py-28">
             <div className="max-w-8xl mx-auto px-3">
-               <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-20">
+               <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:gap-20">
                   <div className="space-y-6">
                      <div className="flex items-start justify-between gap-3">
                         <h2 className="text-5xl font-extralight">
@@ -43,7 +44,7 @@ export default async function Home() {
                      </div>
                      <HomeMenuList items={category.menuItems} />
                   </div>
-                  <div className="md:p-6">
+                  <div className="lg:p-6">
                      <h1 className="mb-6 text-center text-5xl font-extralight text-balance md:text-left">
                         Wo Tradition auf heute trifft
                      </h1>
@@ -54,6 +55,8 @@ export default async function Home() {
                </div>
             </div>
          </div>
+
+         <Gallery />
       </>
    )
 }
