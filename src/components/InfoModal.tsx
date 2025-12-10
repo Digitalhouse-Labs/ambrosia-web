@@ -75,7 +75,7 @@ export function InfoModal() {
                            {t("businessInformation")}
                         </h3>
                         <address className="flex flex-wrap items-center gap-x-4 not-italic">
-                           <ul className="*:text-muted flex flex-col gap-y-1 *:text-xs">
+                           <ul className="*:text-foreground/75 flex flex-col gap-y-1 *:text-xs">
                               <li>{t("companyName")}: Ambrosia Restaurant</li>
                               <li>
                                  Email:{" "}

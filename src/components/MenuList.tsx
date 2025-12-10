@@ -21,12 +21,12 @@ export function MenuList({ menu }: MenuListProps) {
                <div className="flex flex-col gap-0.5">
                   <h2 className="text-lg font-semibold">{category.name}</h2>
                   {category.description && (
-                     <p className="text-muted text-sm/relaxed">
+                     <p className="text-foreground/75 text-sm/relaxed">
                         {category.description}
                      </p>
                   )}
                   {category.schedule && (
-                     <p className="text-muted text-xs italic">
+                     <p className="text-foreground/75 text-xs italic">
                         {category.schedule}
                      </p>
                   )}

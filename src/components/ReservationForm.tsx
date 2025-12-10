@@ -1,6 +1,6 @@
 "use client"
 
-import { useActionState, useCallback, useEffect } from "react"
+import { useActionState, useCallback, useEffect, useTransition } from "react"
 import { useTranslations } from "next-intl"
 import {
    Button,
@@ -32,10 +32,8 @@ export function ReservationForm() {
    const { executeRecaptcha } = useGoogleReCaptcha()
 
    const t = useTranslations("ReservationForm")
-   const [state, formAction, isPending] = useActionState(
-      sendEmail,
-      initialState,
-   )
+   const [state, formAction] = useActionState(sendEmail, initialState)
+   const [isPending, startTransition] = useTransition()
 
    const today = new Date().toISOString().split("T")[0]
 
@@ -60,15 +58,14 @@ export function ReservationForm() {
 
    const handleSubmit = useCallback(
       async (formData: FormData) => {
-         if (!executeRecaptcha) {
-            console.log("Execute recaptcha not yet available")
-            return
-         }
+         if (!executeRecaptcha) return
 
          const token = await executeRecaptcha("reservation")
          formData.append("recaptchaToken", token)
 
-         formAction(formData)
+         startTransition(() => {
+            formAction(formData)
+         })
       },
       [executeRecaptcha, formAction],
    )
@@ -218,15 +215,15 @@ export function ReservationForm() {
                            size="lg"
                            variant="tertiary"
                            className="w-full"
-                           isPending={isPending}
+                           isDisabled={isPending}
                         >
-                           {({ isPending }) => (
+                           {isPending ? (
                               <>
-                                 {isPending ? (
-                                    <Spinner color="current" size="sm" />
-                                 ) : null}
-                                 {isPending ? t("submitting") : t("submit")}
+                                 <Spinner color="current" size="sm" />
+                                 {t("submitting")}
                               </>
+                           ) : (
+                              t("submit")
                            )}
                         </Button>
                      </Card.Content>
