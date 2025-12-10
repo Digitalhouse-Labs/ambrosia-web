@@ -59,6 +59,12 @@ export async function generateMetadata({
          siteName: "Ambrosia Restaurant",
          locale: locale === "de" ? "de_DE" : "en_US",
          type: "website",
+         images: [
+            {
+               url: "https://www.ambrosia-rueckersdorf.de/og-image.jpg",
+               alt: "Ambrosia Restaurant",
+            },
+         ],
       },
       twitter: {
          card: "summary_large_image",
