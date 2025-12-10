@@ -73,7 +73,7 @@ export default function Gallery() {
                   {images.map((image, index) => (
                      <div
                         key={index}
-                        className="min-w-0 flex-[0_0_80%] pl-4 md:flex-[0_0_40%] lg:flex-[0_0_30%]"
+                        className="mr-4 min-w-0 flex-[0_0_80%] md:flex-[0_0_40%] lg:flex-[0_0_30%]"
                      >
                         <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
                            <Image
