@@ -11,7 +11,7 @@ import { Link } from "@/i18n/navigation"
 export default function Header() {
    const t = useTranslations("Header")
    return (
-      <header className="relative z-40 w-full bg-transparent py-3">
+      <header className="relative z-40 w-full py-3">
          <div className="max-w-9xl mx-auto px-3">
             <div className="flex min-h-14 items-center gap-3">
                <div className="flex grow basis-0">

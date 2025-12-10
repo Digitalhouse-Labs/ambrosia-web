@@ -13,7 +13,7 @@ export default function Cover() {
             alt="Ambrosia restaurant"
             className="object-cover"
          />
-         <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/90 via-neutral-950/60 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/60 via-neutral-950/40 to-transparent" />
       </div>
    )
 }
