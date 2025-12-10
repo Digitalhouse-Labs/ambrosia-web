@@ -9,12 +9,12 @@ export default function CoverMenu() {
          <Image
             src={cover}
             fill
-            priority
-            loading="eager"
+            preload
+            sizes="100vw"
             alt="Ambrosia restaurant"
             className="object-cover"
          />
-         <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/90 via-neutral-950/60 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/80 via-neutral-950/40 to-transparent" />
       </div>
    )
 }

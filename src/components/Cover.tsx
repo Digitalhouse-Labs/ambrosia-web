@@ -9,10 +9,10 @@ export default function Cover() {
          <Image
             src={cover}
             fill
-            priority
-            loading="eager"
+            preload
             alt="Ambrosia restaurant"
             className="object-cover"
+            sizes="100vw"
          />
          <div className="absolute inset-0 bg-gradient-to-b from-neutral-950/60 via-neutral-950/40 to-transparent" />
       </div>
