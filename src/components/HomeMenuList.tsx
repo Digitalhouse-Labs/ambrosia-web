@@ -19,7 +19,9 @@ export default function HomeMenuList({ items }: MenuListProps) {
                <li key={index} className="flex justify-between">
                   <div>
                      <h3 className="font-medium">{item.name}</h3>
-                     <p className="text-muted text-sm">{item.description}</p>
+                     <p className="text-foreground/75 text-sm">
+                        {item.description}
+                     </p>
                   </div>
                   <span className="font-semibold text-nowrap">
                      {item.price} &euro;
