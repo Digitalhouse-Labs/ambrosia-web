@@ -35,7 +35,9 @@ export default function MenuModal() {
    return (
       <Modal key={pathname}>
          <Modal.Trigger>
-            <div className="group flex items-center gap-2">
+            <div
+               className={`group flex items-center gap-2 ${isHome || isMenu ? "text-white" : "text-foreground"}`}
+            >
                <Hamburger className="ease-out-quart size-9 group-hover:scale-[0.97] group-hover:transition-transform" />
                <span className="hidden text-sm font-medium md:flex">
                   {t("menu")}
