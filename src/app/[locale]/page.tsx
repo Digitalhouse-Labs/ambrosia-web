@@ -1,8 +1,6 @@
 import Cover from "@/components/Cover"
 import GoogleReviews from "@/components/GoogleReviews"
 import { getReviews } from "@/lib/data"
-import { Suspense } from "react"
-import GoogleReviewsLoading from "@/components/GoogleReviewsLoading"
 import { getTranslations } from "next-intl/server"
 import { getMenu } from "@/lib/products"
 import LogoCircle from "../../../public/logo-circle.svg"
@@ -25,9 +23,7 @@ export default async function Home() {
 
             <div className="absolute inset-x-0 bottom-3 md:bottom-6">
                <div className="max-w-9xl mx-auto flex items-end justify-end px-3">
-                  <Suspense fallback={<GoogleReviewsLoading />}>
-                     <GoogleReviews data={reviews} />
-                  </Suspense>
+                  <GoogleReviews data={reviews} />
                </div>
             </div>
          </div>
