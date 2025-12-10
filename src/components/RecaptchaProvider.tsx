@@ -7,6 +7,7 @@ export function RecaptchaProvider({ children }: { children: ReactNode }) {
    return (
       <GoogleReCaptchaProvider
          reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
+         language="de"
          scriptProps={{
             async: true,
             defer: true,
