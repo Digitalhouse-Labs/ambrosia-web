@@ -9,6 +9,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server"
 import Header from "@/components/Header"
 import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 import { GoogleAnalytics } from "@next/third-parties/google"
+import { RecaptchaProvider } from "@/components/RecaptchaProvider"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -151,12 +152,14 @@ export default async function RootLayout({
          className={`${inter.className} scrollbar-hidden`}
       >
          <body className="bg-background text-foreground antialiased">
-            <ThemeProviderNext>
-               <NextIntlClientProvider>
-                  <Header />
-                  {children}
-               </NextIntlClientProvider>
-            </ThemeProviderNext>
+            <RecaptchaProvider>
+               <ThemeProviderNext>
+                  <NextIntlClientProvider>
+                     <Header />
+                     {children}
+                  </NextIntlClientProvider>
+               </ThemeProviderNext>
+            </RecaptchaProvider>
             <script
                type="application/ld+json"
                dangerouslySetInnerHTML={{
