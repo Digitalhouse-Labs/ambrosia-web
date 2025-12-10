@@ -36,6 +36,7 @@ export default function MenuModal() {
       <Modal key={pathname}>
          <Modal.Trigger>
             <div
+               aria-label={t("menu")}
                className={`group flex items-center gap-2 ${isHome || isMenu ? "text-white" : "text-foreground"}`}
             >
                <Hamburger className="ease-out-quart size-9 group-hover:scale-[0.97] group-hover:transition-transform" />

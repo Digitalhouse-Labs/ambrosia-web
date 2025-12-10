@@ -47,7 +47,7 @@ export default function Header() {
                      asChild
                      className="flex md:hidden"
                   >
-                     <Link href="/reservation">
+                     <Link href="/reservation" aria-label={t("booking")}>
                         <CalendarCheck />
                      </Link>
                   </Button>

@@ -164,7 +164,7 @@ export default async function RootLayout({
                <ThemeProviderNext>
                   <NextIntlClientProvider>
                      <Header />
-                     {children}
+                     <main>{children}</main>
                   </NextIntlClientProvider>
                </ThemeProviderNext>
             </RecaptchaProvider>
