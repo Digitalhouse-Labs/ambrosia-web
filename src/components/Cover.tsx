@@ -9,7 +9,7 @@ export default function Cover() {
          <Image
             src={cover}
             fill
-            preload
+            fetchPriority="high"
             alt="Ambrosia restaurant"
             className="object-cover"
             sizes="100vw"
