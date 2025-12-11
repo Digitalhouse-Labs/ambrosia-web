@@ -12,7 +12,7 @@ export default function Footer() {
       <footer className="pt-16 pb-8 md:pt-28 md:pb-12">
          <div className="max-w-8xl mx-auto px-3">
             <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-               <div className="flex flex-col items-center gap-1 md:flex-row md:gap-4">
+               <div className="flex flex-col items-center gap-1 text-center md:flex-row md:gap-4">
                   <span className="text-foreground/75 text-sm">
                      &copy; {new Date().getFullYear()} Ambrosia Restaurant.{" "}
                      {t("rights")}
