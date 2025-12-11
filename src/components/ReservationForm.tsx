@@ -73,7 +73,7 @@ export function ReservationForm() {
    )
 
    return (
-      <div className="relative flex min-h-[calc(100svh-5rem)] items-center justify-start py-3 md:py-6">
+      <div className="relative -z-10 flex min-h-[calc(100svh-5rem)] items-center justify-start py-3 md:py-6">
          <div className="absolute inset-y-0 right-0 hidden w-1/2 mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-right md:block">
             <Image
                src="/food.jpg"
