@@ -78,7 +78,10 @@
       "error": "Fehler",
       "successTitle": "Vielen Dank!",
       "successMessage": "Ihre Reservierung wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
-      "backToHome": "Zurück zur Startseite"
+      "backToHome": "Zurück zur Startseite",
+      "termsLabel": "Ich stimme den Bedingungen zu",
+      "termsDescription": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
+      "privacyPolicy": "Datenschutzerklärung"
    },
    "Gallery": {
       "alt1": "Amethystos griechischer Rotwein im Restaurant Ambrosia Rückersdorf",

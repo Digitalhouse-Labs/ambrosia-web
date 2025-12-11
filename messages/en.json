@@ -78,7 +78,10 @@
       "error": "Error",
       "successTitle": "Thank You!",
       "successMessage": "Your reservation has been successfully submitted. We will contact you shortly.",
-      "backToHome": "Back to Home"
+      "backToHome": "Back to Home",
+      "termsLabel": "I agree to the terms",
+      "termsDescription": "I have read and agree to the processing of my data.",
+      "privacyPolicy": "Privacy Policy"
    },
    "Gallery": {
       "alt1": "Amethystos Greek red wine at Restaurant Ambrosia Rueckersdorf",

@@ -5,6 +5,8 @@ import { useTranslations } from "next-intl"
 import {
    Button,
    Card,
+   Checkbox,
+   Description,
    FieldError,
    Form,
    Input,
@@ -209,6 +211,21 @@ export function ReservationForm() {
                            />
                            <FieldError />
                         </TextField>
+
+                        <Checkbox isRequired name="terms">
+                           <Checkbox.Control>
+                              <Checkbox.Indicator />
+                           </Checkbox.Control>
+                           <Checkbox.Content>
+                              <Label>{t("termsLabel")}</Label>
+                              <Description>
+                                 {t("termsDescription")}{" "}
+                                 <Link href="/privacy" className="underline">
+                                    {t("privacyPolicy")}
+                                 </Link>
+                              </Description>
+                           </Checkbox.Content>
+                        </Checkbox>
 
                         <Button
                            type="submit"
