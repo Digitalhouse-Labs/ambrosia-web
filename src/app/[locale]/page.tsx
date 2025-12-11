@@ -1,31 +1,48 @@
 import Cover from "@/components/Cover"
 import GoogleReview from "@/components/GoogleReview"
 import { getReviews } from "@/lib/data"
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { getMenu } from "@/lib/products"
 import LogoCircle from "../../../public/logo-circle.svg"
 import HomeMenuList from "@/components/HomeMenuList"
 import Gallery from "@/components/ImageSlider"
 import { Suspense } from "react"
 import GoogleReviewLoading from "@/components/GoogleReviewSkeleton"
+import { MenuHomeSkeleton } from "@/components/MenuHomeSkeleton"
 
-export default async function Home() {
-   const t = await getTranslations("HomePage")
+type Props = {
+   params: Promise<{ locale: string }>
+}
+
+async function GoogleReviewWrapper() {
    const reviews = await getReviews()
+   return <GoogleReview data={reviews} />
+}
 
+async function HomeMenuListWrapper() {
    const menu = await getMenu()
    const category = menu.find((c) => c.id === "10")
 
    if (!category) return <p>Category not found</p>
 
+   return <HomeMenuList items={category.menuItems} />
+}
+
+export default async function Home({ params }: Props) {
+   const { locale } = await params
+   setRequestLocale(locale)
+
+   const t = await getTranslations({ locale, namespace: "HomePage" })
+
    return (
       <>
          <div className="relative">
             <Cover />
+
             <div className="absolute inset-x-0 bottom-3 md:bottom-6">
                <div className="max-w-9xl mx-auto flex items-end justify-end px-3">
                   <Suspense fallback={<GoogleReviewLoading />}>
-                     <GoogleReview data={reviews} />
+                     <GoogleReviewWrapper />
                   </Suspense>
                </div>
             </div>
@@ -41,7 +58,9 @@ export default async function Home() {
                         </h2>
                         <LogoCircle className="h-auto w-10 shrink-0" />
                      </div>
-                     <HomeMenuList items={category.menuItems} />
+                     <Suspense fallback={<MenuHomeSkeleton />}>
+                        <HomeMenuListWrapper />
+                     </Suspense>
                   </div>
                   <div className="lg:p-6">
                      <h1 className="mb-6 text-center text-5xl font-extralight text-balance md:text-left">
@@ -54,7 +73,6 @@ export default async function Home() {
                </div>
             </div>
          </div>
-
          <Gallery />
       </>
    )

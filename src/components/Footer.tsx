@@ -5,17 +5,23 @@ import Link from "next/link"
 import Facebook from "../../public/facebook.svg"
 import Instagram from "../../public/instagram.svg"
 
-export default function Footer() {
+interface FooterProps {
+   year: number
+}
+
+export default function Footer({ year }: FooterProps) {
    const t = useTranslations("Footer")
 
    return (
-      <footer className="border-default mt-6 border-t py-6">
+      <footer className="mt-6 py-8">
          <div className="max-w-8xl mx-auto px-3">
             <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
                <div className="flex flex-col items-center gap-1 text-center md:flex-row md:gap-4">
-                  <span className="text-foreground/75 text-sm text-balance">
-                     &copy; {new Date().getFullYear()} Ambrosia Restaurant.{" "}
-                     {t("rights")}
+                  <span
+                     suppressHydrationWarning
+                     className="text-foreground/75 text-sm text-balance"
+                  >
+                     &copy; {year} Ambrosia Restaurant. {t("rights")}
                   </span>
                   <span className="hidden md:block" aria-hidden="true">
                      &middot;

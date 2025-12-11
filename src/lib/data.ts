@@ -1,17 +1,15 @@
-import "server-only"
-import { cache } from "react"
+import { cacheLife } from "next/cache"
 
-export const getReviews = cache(async () => {
+export async function getReviews() {
+   "use cache"
+
+   cacheLife("weeks")
+
    const placeId = process.env.GOOGLE_PLACE_ID!
    const apiKey = process.env.GOOGLE_PLACES_API_KEY!
 
    const response = await fetch(
       `https://places.googleapis.com/v1/places/${placeId}?fields=rating,userRatingCount&key=${apiKey}`,
-      {
-         next: {
-            revalidate: 60 * 60 * 24 * 14,
-         },
-      },
    )
 
    if (!response.ok) {
@@ -24,4 +22,4 @@ export const getReviews = cache(async () => {
       rating: data.rating,
       totalReviews: data.userRatingCount,
    }
-})
+}

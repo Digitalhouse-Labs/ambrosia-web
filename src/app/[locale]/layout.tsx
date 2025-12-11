@@ -11,6 +11,7 @@ import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister"
 import Footer from "@/components/Footer"
+import { getCurrentYear } from "@/lib/utils"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -104,6 +105,8 @@ export default async function RootLayout({
 
    setRequestLocale(locale)
 
+   const year = await getCurrentYear()
+
    const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Restaurant",
@@ -164,7 +167,7 @@ export default async function RootLayout({
                <NextIntlClientProvider>
                   <Header />
                   <main>{children}</main>
-                  <Footer />
+                  <Footer year={year} />
                </NextIntlClientProvider>
             </ThemeProviderNext>
             <script

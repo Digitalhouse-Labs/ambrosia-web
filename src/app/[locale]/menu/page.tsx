@@ -5,8 +5,10 @@ import { MenuList } from "@/components/MenuList"
 import { CategoryTabs } from "@/components/CategoryTabs"
 import GoogleReview from "@/components/GoogleReviewButton"
 import CoverMenu from "@/components/CoverMenu"
-import { getTranslations } from "next-intl/server"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Metadata } from "next"
+import { Suspense } from "react"
+import { MenuListSkeleton } from "@/components/MenuListSkeleton"
 
 type Props = {
    params: Promise<{ locale: string }>
@@ -22,8 +24,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
    }
 }
 
-export default async function Page() {
+async function MenuContent() {
    const menu = await getMenu()
+
+   return (
+      <>
+         <CategoryTabs categories={menu} />
+         <MenuList menu={menu} />
+      </>
+   )
+}
+
+export default async function Page({ params }: Props) {
+   const { locale } = await params
+   setRequestLocale(locale)
+
    return (
       <main>
          <CoverMenu />
@@ -38,9 +53,9 @@ export default async function Page() {
                   <ProfileHeader />
                </div>
 
-               <CategoryTabs categories={menu} />
-
-               <MenuList menu={menu} />
+               <Suspense fallback={<MenuListSkeleton />}>
+                  <MenuContent />
+               </Suspense>
 
                <div className="py-12">
                   <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
