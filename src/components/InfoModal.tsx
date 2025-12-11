@@ -9,9 +9,6 @@ import Maestro from "../../public/cards/maestro.svg"
 import AmericanExpress from "../../public/cards/american-express.svg"
 import ApplePay from "../../public/cards/apple-pay.svg"
 import GooglePay from "../../public/cards/google-pay.svg"
-import Facebook from "../../public/facebook.svg"
-import Instagram from "../../public/instagram.svg"
-import Link from "next/link"
 import { useTranslations } from "next-intl"
 
 export function InfoModal() {
@@ -50,27 +47,6 @@ export function InfoModal() {
                         </div>
                      </Surface>
                      <Surface variant="secondary" className="rounded-2xl p-4">
-                        <h3 className="text-foreground mb-3 font-semibold">
-                           {t("followUs")}
-                        </h3>
-                        <div className="flex flex-wrap items-center gap-x-4">
-                           <Link
-                              href="https://www.facebook.com/resambrosia"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                           >
-                              <Facebook className="text-foreground h-auto w-6 shrink-0" />
-                           </Link>
-                           <Link
-                              href="https://www.instagram.com/resambrosia"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                           >
-                              <Instagram className="text-foreground h-auto w-6 shrink-0" />
-                           </Link>
-                        </div>
-                     </Surface>
-                     <Surface variant="secondary" className="rounded-2xl p-4">
                         <h3 className="text-foreground mb-3">
                            {t("businessInformation")}
                         </h3>
@@ -88,7 +64,6 @@ export function InfoModal() {
                                  {t("address")}: Hauptstraße 37, 90607
                                  Rückersdorf
                               </li>
-                              <li>{t("taxId")}: 221/274 70670</li>
                            </ul>
                         </address>
                      </Surface>

@@ -12,7 +12,7 @@ interface GoogleReviewsProps {
    }
 }
 
-export default function GoogleReviews({ data }: GoogleReviewsProps) {
+export default function GoogleReview({ data }: GoogleReviewsProps) {
    const rating = data.rating || 0
    const fullStars = Math.floor(rating)
    const hasHalfStar = rating % 1 >= 0.5
@@ -23,10 +23,8 @@ export default function GoogleReviews({ data }: GoogleReviewsProps) {
          variant="secondary"
          className="w-full max-w-full p-4 sm:max-w-md md:p-6"
       >
-         {/* Stars */}
          <div className="flex items-center justify-between gap-3">
             <div className="relative">
-               {/* Background stars (empty) */}
                <div className="flex gap-2">
                   {Array.from({ length: 5 }, (_, i) => (
                      <Star
@@ -37,8 +35,6 @@ export default function GoogleReviews({ data }: GoogleReviewsProps) {
                      />
                   ))}
                </div>
-
-               {/* Foreground stars (filled) */}
                <div className="absolute top-0 flex gap-2">
                   {Array.from({ length: fullStars }, (_, i) => (
                      <Star

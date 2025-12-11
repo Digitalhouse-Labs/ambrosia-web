@@ -30,18 +30,18 @@
    "Footer": {
       "terms": "Imprint",
       "privacy": "Privacy Policy",
-      "rights": "All rights reserved"
+      "rights": "All rights reserved",
+      "facebookLink": "Visit us on Facebook",
+      "instagramLink": "Visit us on Instagram"
    },
    "InformationModal": {
       "information": "Information",
       "informationDescription": "See our address, contact details and payment methods.",
-      "followUs": "Follow us",
       "businessInformation": "Business Information",
       "companyName": "Company Name",
       "phone": "Phone",
       "address": "Address",
       "paymentMethods": "Payment Methods",
-      "taxId": "Tax ID",
       "review": "Review us"
    },
    "Menu": {

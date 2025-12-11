@@ -30,18 +30,18 @@
    "Footer": {
       "terms": "Impressum",
       "privacy": "Datenschutzerklärung",
-      "rights": "Alle Rechte vorbehalten"
+      "rights": "Alle Rechte vorbehalten",
+      "facebookLink": "Besuchen Sie uns auf Facebook",
+      "instagramLink": "Besuchen Sie uns auf Instagram"
    },
    "InformationModal": {
       "information": "Informationen",
       "informationDescription": "Sehen Sie unsere Adresse, Kontaktdaten und Zahlungsmethoden.",
-      "followUs": "Folgen Sie uns",
       "businessInformation": "Unternehmens informationen",
       "companyName": "Firmenname",
       "phone": "Telefon",
       "address": "Adresse",
       "paymentMethods": "Zahlungsmethoden",
-      "taxId": "St.-Nr.",
       "review": "Bewerten Sie uns"
    },
    "Menu": {

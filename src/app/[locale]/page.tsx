@@ -1,11 +1,13 @@
 import Cover from "@/components/Cover"
-import GoogleReviews from "@/components/GoogleReviews"
+import GoogleReview from "@/components/GoogleReview"
 import { getReviews } from "@/lib/data"
 import { getTranslations } from "next-intl/server"
 import { getMenu } from "@/lib/products"
 import LogoCircle from "../../../public/logo-circle.svg"
 import HomeMenuList from "@/components/HomeMenuList"
 import Gallery from "@/components/ImageSlider"
+import { Suspense } from "react"
+import GoogleReviewLoading from "@/components/GoogleReviewSkeleton"
 
 export default async function Home() {
    const t = await getTranslations("HomePage")
@@ -20,10 +22,11 @@ export default async function Home() {
       <>
          <div className="relative">
             <Cover />
-
             <div className="absolute inset-x-0 bottom-3 md:bottom-6">
                <div className="max-w-9xl mx-auto flex items-end justify-end px-3">
-                  <GoogleReviews data={reviews} />
+                  <Suspense fallback={<GoogleReviewLoading />}>
+                     <GoogleReview data={reviews} />
+                  </Suspense>
                </div>
             </div>
          </div>

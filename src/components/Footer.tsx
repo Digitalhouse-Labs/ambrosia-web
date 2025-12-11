@@ -34,6 +34,7 @@ export default function Footer() {
                      href="https://www.facebook.com/resambrosia"
                      target="_blank"
                      rel="noopener noreferrer"
+                     aria-label={t("facebookLink")}
                   >
                      <Facebook className="text-foreground h-auto w-6 shrink-0" />
                   </Link>
@@ -41,6 +42,7 @@ export default function Footer() {
                      href="https://www.instagram.com/resambrosia"
                      target="_blank"
                      rel="noopener noreferrer"
+                     aria-label={t("instagramLink")}
                   >
                      <Instagram className="text-foreground h-auto w-6 shrink-0" />
                   </Link>
