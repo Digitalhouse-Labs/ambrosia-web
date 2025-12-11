@@ -9,7 +9,7 @@ export default function Footer() {
    const t = useTranslations("Footer")
 
    return (
-      <footer className="pt-16 pb-8 md:pt-28 md:pb-12">
+      <footer className="border-default mt-6 border-t py-6">
          <div className="max-w-8xl mx-auto px-3">
             <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
                <div className="flex flex-col items-center gap-1 text-center md:flex-row md:gap-4">

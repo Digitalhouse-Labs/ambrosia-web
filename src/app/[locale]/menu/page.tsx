@@ -1,10 +1,7 @@
-import { Suspense } from "react"
 import LogoCircle from "../../../../public/logo-circle.svg"
 import ProfileHeader from "@/components/ProfileHeader"
-
 import { getMenu } from "@/lib/products"
 import { MenuList } from "@/components/MenuList"
-import { MenuListSkeleton } from "@/components/MenuListSkeleton"
 import { CategoryTabs } from "@/components/CategoryTabs"
 import GoogleReview from "@/components/GoogleReviewButton"
 import CoverMenu from "@/components/CoverMenu"
@@ -43,9 +40,7 @@ export default async function Page() {
 
                <CategoryTabs categories={menu} />
 
-               <Suspense fallback={<MenuListSkeleton />}>
-                  <MenuList menu={menu} />
-               </Suspense>
+               <MenuList menu={menu} />
 
                <div className="py-12">
                   <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
