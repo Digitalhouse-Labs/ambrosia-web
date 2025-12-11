@@ -66,55 +66,53 @@ export default function Gallery() {
    }, [emblaApi])
 
    return (
-      <div className="pb-20">
-         <div className="max-w-8xl mx-auto px-3">
-            <div className="mb-6 overflow-hidden" ref={emblaRef}>
-               <div className="flex">
-                  {images.map((image, index) => (
-                     <div
-                        key={index}
-                        className="mr-4 min-w-0 flex-[0_0_80%] md:flex-[0_0_40%] lg:flex-[0_0_30%]"
-                     >
-                        <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                           <Image
-                              priority={index < 3}
-                              src={image.src}
-                              alt={image.alt}
-                              fill
-                              className="object-cover"
-                           />
-                        </div>
+      <div className="max-w-8xl mx-auto px-3">
+         <div className="mb-6 overflow-hidden" ref={emblaRef}>
+            <div className="flex">
+               {images.map((image, index) => (
+                  <div
+                     key={index}
+                     className="mr-4 min-w-0 flex-[0_0_80%] md:flex-[0_0_40%] lg:flex-[0_0_30%]"
+                  >
+                     <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+                        <Image
+                           priority={index < 3}
+                           src={image.src}
+                           alt={image.alt}
+                           fill
+                           className="object-cover"
+                        />
                      </div>
-                  ))}
-               </div>
+                  </div>
+               ))}
             </div>
-            <div className="flex items-start justify-between">
-               <div className="flex flex-col gap-y-3">
-                  <h2 className="text-4xl font-light md:text-5xl">
-                     {t("galleryTitle")}
-                  </h2>
-                  <p className="text-balance">{t("galleryDescription")}</p>
-               </div>
-               <div className="flex gap-2">
-                  <Button
-                     isIconOnly
-                     variant="tertiary"
-                     onClick={scrollPrev}
-                     isDisabled={!canScrollPrev}
-                     aria-label="Previous slide"
-                  >
-                     <ChevronLeft />
-                  </Button>
-                  <Button
-                     isIconOnly
-                     variant="tertiary"
-                     onClick={scrollNext}
-                     isDisabled={!canScrollNext}
-                     aria-label="Next slide"
-                  >
-                     <ChevronRight />
-                  </Button>
-               </div>
+         </div>
+         <div className="flex items-start justify-between">
+            <div className="flex flex-col gap-y-3">
+               <h2 className="text-4xl font-light md:text-5xl">
+                  {t("galleryTitle")}
+               </h2>
+               <p className="text-balance">{t("galleryDescription")}</p>
+            </div>
+            <div className="flex gap-2">
+               <Button
+                  isIconOnly
+                  variant="tertiary"
+                  onClick={scrollPrev}
+                  isDisabled={!canScrollPrev}
+                  aria-label="Previous slide"
+               >
+                  <ChevronLeft />
+               </Button>
+               <Button
+                  isIconOnly
+                  variant="tertiary"
+                  onClick={scrollNext}
+                  isDisabled={!canScrollNext}
+                  aria-label="Next slide"
+               >
+                  <ChevronRight />
+               </Button>
             </div>
          </div>
       </div>

@@ -16,7 +16,7 @@ import { useTranslations } from "next-intl"
 
 export function InfoModal() {
    const state = useOverlayState()
-   const t = useTranslations("Footer")
+   const t = useTranslations("InformationModal")
 
    return (
       <>

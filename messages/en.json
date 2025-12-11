@@ -28,6 +28,11 @@
       "booking": "Book a Table"
    },
    "Footer": {
+      "terms": "Imprint",
+      "privacy": "Privacy Policy",
+      "rights": "All rights reserved"
+   },
+   "InformationModal": {
       "information": "Information",
       "informationDescription": "See our address, contact details and payment methods.",
       "followUs": "Follow us",
@@ -115,5 +120,16 @@
    "ReservationPage": {
       "metaTitle": "Book a Table | Ambrosia Restaurant Rueckersdorf",
       "metaDescription": "Reserve your table now at Ambrosia Restaurant in Rueckersdorf near Nuremberg. Quick and easy online reservation."
+   },
+   "PrivacyPage": {
+      "metaTitle": "Privacy Policy | Ambrosia Restaurant",
+      "metaDescription": "Privacy policy of Ambrosia Restaurant in Rueckersdorf. Information about the processing of your personal data.",
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated"
+   },
+   "ImpressumPage": {
+      "metaTitle": "Legal Notice | Ambrosia Restaurant",
+      "metaDescription": "Legal notice of Ambrosia Restaurant in Rueckersdorf. Information according to § 5 TMG.",
+      "title": "Legal Notice"
    }
 }

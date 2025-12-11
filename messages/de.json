@@ -28,6 +28,11 @@
       "booking": "Jetzt reservieren"
    },
    "Footer": {
+      "terms": "Impressum",
+      "privacy": "Datenschutzerklärung",
+      "rights": "Alle Rechte vorbehalten"
+   },
+   "InformationModal": {
       "information": "Informationen",
       "informationDescription": "Sehen Sie unsere Adresse, Kontaktdaten und Zahlungsmethoden.",
       "followUs": "Folgen Sie uns",
@@ -118,5 +123,16 @@
    "ReservationPage": {
       "metaTitle": "Tisch reservieren | Ambrosia Restaurant",
       "metaDescription": "Reservieren Sie jetzt Ihren Tisch im Ambrosia Restaurant in Rückersdorf bei Nürnberg. Online-Reservierung schnell und einfach."
+   },
+   "PrivacyPage": {
+      "metaTitle": "Datenschutzerklärung | Ambrosia Restaurant",
+      "metaDescription": "Datenschutzerklärung des Ambrosia Restaurant in Rückersdorf. Informationen zur Verarbeitung Ihrer personenbezogenen Daten.",
+      "title": "Datenschutzerklärung",
+      "lastUpdated": "Stand"
+   },
+   "ImpressumPage": {
+      "metaTitle": "Impressum | Ambrosia Restaurant",
+      "metaDescription": "Impressum des Ambrosia Restaurant in Rückersdorf. Angaben gemäß § 5 TMG.",
+      "title": "Impressum"
    }
 }

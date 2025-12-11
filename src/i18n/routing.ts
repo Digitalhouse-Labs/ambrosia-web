@@ -13,5 +13,13 @@ export const routing = defineRouting({
          de: "/reservierung",
          en: "/reservation",
       },
+      "/imprint": {
+         de: "/impressum",
+         en: "/imprint",
+      },
+      "/privacy": {
+         de: "/datenschutz",
+         en: "/privacy",
+      },
    },
 })

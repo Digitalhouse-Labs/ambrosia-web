@@ -10,6 +10,7 @@ import Header from "@/components/Header"
 import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister"
+import Footer from "@/components/Footer"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -163,6 +164,7 @@ export default async function RootLayout({
                <NextIntlClientProvider>
                   <Header />
                   <main>{children}</main>
+                  <Footer />
                </NextIntlClientProvider>
             </ThemeProviderNext>
             <script

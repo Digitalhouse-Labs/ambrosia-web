@@ -3,7 +3,7 @@ import GoogleLogo from "../../public/google-icon-logo.svg"
 import { useTranslations } from "next-intl"
 
 export default function GoogleReviewButton() {
-   const t = useTranslations("Footer")
+   const t = useTranslations("InformationModal")
 
    return (
       <div className="sticky bottom-3 z-50">
