@@ -157,13 +157,16 @@ export default function BusinessHighlights({ data }: BusinessHighlightsProps) {
                            hideScrollBar
                            className="h-full"
                         >
-                           <div className="divide-foreground/5 grid grid-cols-1 divide-y">
+                           <div className="divide-foreground/10 grid grid-cols-1 divide-y">
                               {highlights.map((item) => (
                                  <div
                                     key={item.key}
                                     className="flex items-center gap-4 py-6"
                                  >
-                                    <item.icon className="text-foreground size-6" />
+                                    <item.icon
+                                       className="text-foreground size-6"
+                                       strokeWidth={1.5}
+                                    />
                                     <span className="text-foreground">
                                        {item.label}
                                     </span>
