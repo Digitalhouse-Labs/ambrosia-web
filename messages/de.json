@@ -1,6 +1,6 @@
 {
    "HomePage": {
-      "title": "Willkommen!",
+      "highlightTitle": "Was dieser Ort bietet",
       "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit.",
       "houseFavorites": "Haus-Spezialitäten",
       "viewFullMenu": "Zur Speisekarte"
@@ -141,7 +141,7 @@
       "title": "Impressum"
    },
    "BusinessHighlights": {
-      "title": "Was dieser Ort bietet",
+      "highlightTitle": "Was dieser Ort bietet",
       "dineIn": "Vor Ort essen",
       "takeout": "Zum Mitnehmen",
       "reservable": "Reservierbar",

@@ -1,6 +1,6 @@
 {
    "HomePage": {
-      "title": "Hello world!",
+      "highlightTitle": "What this place offers",
       "description": "At Ambrosia Restaurant, every dish is a tribute to Greek tradition and every moment is crafted for today. We unite the warmth of Greek hospitality, the richness of timeless flavors, and the spirit of modern life.",
       "houseFavorites": "House Favorites",
       "viewFullMenu": "View Full Menu"
@@ -138,7 +138,7 @@
       "title": "Legal Notice"
    },
    "BusinessHighlights": {
-      "title": "What this place offers",
+      "highlightTitle": "What this place offers",
       "dineIn": "Dine-in",
       "takeout": "Takeout",
       "reservable": "Reservations",
