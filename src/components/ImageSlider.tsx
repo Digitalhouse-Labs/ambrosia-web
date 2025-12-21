@@ -90,10 +90,8 @@ export default function Gallery() {
                </div>
             </div>
             <div className="flex items-start justify-between">
-               <div className="flex flex-col gap-y-3">
-                  <h2 className="text-4xl font-light md:text-5xl">
-                     {t("galleryTitle")}
-                  </h2>
+               <div className="flex flex-col gap-y-2">
+                  <h2 className="text-3xl font-light">{t("galleryTitle")}</h2>
                   <p className="text-balance">{t("galleryDescription")}</p>
                </div>
                <div className="flex gap-2">

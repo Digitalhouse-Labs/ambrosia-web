@@ -59,7 +59,7 @@ export default async function Home({ params }: Props) {
             <div className="max-w-8xl mx-auto px-3">
                <div className="mb-16 md:mb-28">
                   <div className="flex flex-col gap-y-6">
-                     <h2 className="text-3xl font-extralight">
+                     <h2 className="text-3xl font-light">
                         {t("highlightTitle")}
                      </h2>
                      <Suspense fallback={<BusinessHighlightsSkeleton />}>
