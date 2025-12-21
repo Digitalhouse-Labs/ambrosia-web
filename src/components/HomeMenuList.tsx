@@ -2,7 +2,7 @@
 
 import { MenuItem } from "@/lib/types"
 import { Link } from "@/i18n/navigation"
-import { Button } from "@heroui/react"
+import { buttonVariants } from "@heroui/react"
 import { useTranslations } from "next-intl"
 
 interface MenuListProps {
@@ -29,9 +29,16 @@ export default function HomeMenuList({ items }: MenuListProps) {
                </li>
             ))}
          </ul>
-         <Button variant="tertiary" size="lg" asChild className="w-full">
-            <Link href="/menu">{t("viewFullMenu")}</Link>
-         </Button>
+         <Link
+            className={buttonVariants({
+               size: "lg",
+               variant: "ghost",
+               className: "w-full",
+            })}
+            href="/menu"
+         >
+            {t("viewFullMenu")}
+         </Link>
       </>
    )
 }
