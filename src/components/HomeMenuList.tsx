@@ -32,7 +32,7 @@ export default function HomeMenuList({ items }: MenuListProps) {
          <Link
             className={buttonVariants({
                size: "lg",
-               variant: "ghost",
+               variant: "tertiary",
                className: "w-full",
             })}
             href="/menu"

@@ -139,5 +139,22 @@
       "metaTitle": "Impressum | Ambrosia Restaurant",
       "metaDescription": "Impressum des Ambrosia Restaurant in Rückersdorf. Angaben gemäß § 5 TMG.",
       "title": "Impressum"
+   },
+   "BusinessHighlights": {
+      "title": "Was dieser Ort bietet",
+      "dineIn": "Vor Ort essen",
+      "takeout": "Zum Mitnehmen",
+      "reservable": "Reservierbar",
+      "servesBeer": "Serviert Bier",
+      "servesWine": "Serviert Wein",
+      "servesCocktails": "Serviert Cocktails",
+      "servesVegetarianFood": "Vegetarische Gerichte",
+      "outdoorSeating": "Außenbereich",
+      "goodForGroups": "Gut für Gruppen",
+      "goodForChildren": "Kinderfreundlich",
+      "allowsDogs": "Hunde erlaubt",
+      "wheelchairAccessible": "Barrierefrei",
+      "freeParking": "Kostenlose Parkplätze",
+      "showAll": "Alle anzeigen"
    }
 }

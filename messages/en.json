@@ -136,5 +136,22 @@
       "metaTitle": "Legal Notice | Ambrosia Restaurant",
       "metaDescription": "Legal notice of Ambrosia Restaurant in Rueckersdorf. Information according to § 5 TMG.",
       "title": "Legal Notice"
+   },
+   "BusinessHighlights": {
+      "title": "What this place offers",
+      "dineIn": "Dine-in",
+      "takeout": "Takeout",
+      "reservable": "Reservations",
+      "servesBeer": "Serves beer",
+      "servesWine": "Serves wine",
+      "servesCocktails": "Serves cocktails",
+      "servesVegetarianFood": "Vegetarian options",
+      "outdoorSeating": "Outdoor seating",
+      "goodForGroups": "Good for groups",
+      "goodForChildren": "Kid-friendly",
+      "allowsDogs": "Dogs allowed",
+      "wheelchairAccessible": "Wheelchair accessible",
+      "freeParking": "Free parking",
+      "showAll": "Show all"
    }
 }

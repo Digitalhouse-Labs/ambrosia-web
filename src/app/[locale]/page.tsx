@@ -9,6 +9,7 @@ import Gallery from "@/components/ImageSlider"
 import { Suspense } from "react"
 import GoogleReviewLoading from "@/components/GoogleReviewSkeleton"
 import { MenuHomeSkeleton } from "@/components/MenuHomeSkeleton"
+import BusinessHighlights from "@/components/BusinessHighlights"
 
 type Props = {
    params: Promise<{ locale: string }>
@@ -26,6 +27,11 @@ async function HomeMenuListWrapper() {
    if (!category) return <p>Category not found</p>
 
    return <HomeMenuList items={category.menuItems} />
+}
+
+async function BusinessHighlightsWrapper() {
+   const data = await getReviews()
+   return <BusinessHighlights data={data} />
 }
 
 export default async function Home({ params }: Props) {
@@ -50,6 +56,11 @@ export default async function Home({ params }: Props) {
 
          <div className="py-16 md:py-28">
             <div className="max-w-8xl mx-auto px-3">
+               <div className="mb-16 md:mb-28">
+                  <Suspense fallback={null}>
+                     <BusinessHighlightsWrapper />
+                  </Suspense>
+               </div>
                <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:gap-20">
                   <div className="space-y-6">
                      <div className="flex items-start justify-between gap-3">
