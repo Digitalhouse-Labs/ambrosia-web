@@ -4,8 +4,11 @@ import { useActionState, useCallback, useEffect, useTransition } from "react"
 import { useTranslations } from "next-intl"
 import {
    Button,
+   buttonVariants,
    Card,
    Checkbox,
+   DateField,
+   DateInputGroup,
    Description,
    FieldError,
    Form,
@@ -16,13 +19,15 @@ import {
    Spinner,
    TextArea,
    TextField,
+   TimeField,
 } from "@heroui/react"
 import { type EmailState, sendEmail } from "@/app/actions/send-email"
 import Image from "next/image"
 import confetti from "canvas-confetti"
-import { Check } from "lucide-react"
+import { Calendar, Check, Clock } from "lucide-react"
 import { Link } from "@/i18n/navigation"
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3"
+import { getLocalTimeZone, Time, today } from "@internationalized/date"
 
 const initialState: EmailState = {
    success: false,
@@ -36,8 +41,6 @@ export function ReservationForm() {
    const t = useTranslations("ReservationForm")
    const [state, formAction] = useActionState(sendEmail, initialState)
    const [isPending, startTransition] = useTransition()
-
-   const today = new Date().toISOString().split("T")[0]
 
    const occasions = [
       { id: "birthday", name: t("occasionBirthday") },
@@ -96,9 +99,14 @@ export function ReservationForm() {
                         </h2>
                         <p>{t("successMessage")}</p>
                      </div>
-                     <Button variant="tertiary" asChild>
-                        <Link href="/">{t("backToHome")}</Link>
-                     </Button>
+                     <Link
+                        className={buttonVariants({
+                           variant: "tertiary",
+                        })}
+                        href="/"
+                     >
+                        {t("backToHome")}
+                     </Link>
                   </Card.Content>
                </Card>
             ) : (
@@ -150,24 +158,58 @@ export function ReservationForm() {
                         </TextField>
 
                         <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-                           <TextField isRequired name="date" type="date">
+                           <DateField
+                              isRequired
+                              name="date"
+                              minValue={today(getLocalTimeZone())}
+                           >
                               <Label>{t("date")}</Label>
-                              <Input min={today} className="h-14 text-base" />
+                              <DateInputGroup className="h-14">
+                                 <DateInputGroup.Input>
+                                    {(segment) => (
+                                       <DateInputGroup.Segment
+                                          segment={segment}
+                                       />
+                                    )}
+                                 </DateInputGroup.Input>
+                                 <DateInputGroup.Suffix>
+                                    <Calendar className="text-muted size-4" />
+                                 </DateInputGroup.Suffix>
+                              </DateInputGroup>
+                              <Description>{t("dateDescription")}</Description>
                               <FieldError />
-                           </TextField>
+                           </DateField>
 
-                           <TextField isRequired name="time" type="time">
+                           <TimeField
+                              isRequired
+                              name="time"
+                              hourCycle={24}
+                              minValue={new Time(17, 0)}
+                              maxValue={new Time(22, 0)}
+                           >
                               <Label>{t("time")}</Label>
-                              <Input className="h-14 text-base" />
+                              <DateInputGroup className="h-14">
+                                 <DateInputGroup.Input>
+                                    {(segment) => (
+                                       <DateInputGroup.Segment
+                                          segment={segment}
+                                       />
+                                    )}
+                                 </DateInputGroup.Input>
+                                 <DateInputGroup.Suffix>
+                                    <Clock className="text-muted size-4" />
+                                 </DateInputGroup.Suffix>
+                              </DateInputGroup>
+                              <Description>17:00 - 22:00</Description>
                               <FieldError />
-                           </TextField>
+                           </TimeField>
                         </div>
 
                         <TextField isRequired name="persons" type="number">
                            <Label>{t("persons")}</Label>
                            <Input
                               min={1}
-                              max={20}
+                              max={30}
                               className="h-14 text-base"
                               placeholder={t("personsPlaceholder")}
                            />

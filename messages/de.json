@@ -81,7 +81,8 @@
       "backToHome": "Zurück zur Startseite",
       "termsLabel": "Ich stimme den Bedingungen zu",
       "termsDescription": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
-      "privacyPolicy": "Datenschutzerklärung"
+      "privacyPolicy": "Datenschutzerklärung",
+      "dateDescription": "Wähle dein Wunschdatum"
    },
    "Gallery": {
       "alt1": "Amethystos griechischer Rotwein im Restaurant Ambrosia Rückersdorf",

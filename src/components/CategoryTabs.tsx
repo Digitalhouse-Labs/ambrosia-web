@@ -1,11 +1,19 @@
 "use client"
 
-import { Key, useEffect, useMemo, useRef, useState } from "react"
+import {
+   Key,
+   useEffect,
+   useEffectEvent,
+   useMemo,
+   useRef,
+   useState,
+} from "react"
 import {
    Button,
    Label,
    ListBox,
    Modal,
+   ScrollShadow,
    Tabs,
    useOverlayState,
 } from "@heroui/react"
@@ -23,6 +31,7 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
    const activeId = useScrollSpy(ids)
    const modal = useOverlayState()
    const listRef = useRef<HTMLDivElement>(null)
+   const modalListRef = useRef<HTMLDivElement>(null)
    const stickyRef = useRef<HTMLDivElement>(null)
    const [isSticky, setIsSticky] = useState(false)
    const t = useTranslations("Menu")
@@ -58,6 +67,26 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
       container.scrollTo({ left: scrollLeft, behavior: "smooth" })
    }, [activeId])
 
+   const scrollToActiveInModal = useEffectEvent(() => {
+      const container = modalListRef.current
+      if (!container) return
+
+      setTimeout(() => {
+         const activeItem =
+            container.querySelector<HTMLElement>(`[data-id="${activeId}"]`) ||
+            container.querySelector<HTMLElement>(".bg-default")
+
+         if (activeItem) {
+            activeItem.scrollIntoView({ behavior: "smooth", block: "center" })
+         }
+      }, 100)
+   })
+
+   useEffect(() => {
+      if (!modal.isOpen) return
+      scrollToActiveInModal()
+   }, [modal.isOpen])
+
    const handleSelectionChange = (key: Key) => {
       document
          .getElementById(`category-${key}`)
@@ -90,25 +119,28 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
                   selectedKey={activeId}
                   onSelectionChange={handleSelectionChange}
                >
-                  <Tabs.ListContainer
-                     ref={listRef}
-                     className="scrollbar-hidden w-full max-w-full overflow-x-auto rounded-[calc(var(--radius-2xl)+0.25rem)]"
-                  >
-                     <Tabs.List
-                        aria-label="Menu categories"
-                        className="w-fit rounded-none"
+                  <Tabs.ListContainer className="scrollbar-hidden w-full max-w-full overflow-x-auto rounded-[calc(var(--radius-2xl)+0.25rem)]">
+                     <ScrollShadow
+                        ref={listRef}
+                        hideScrollBar
+                        orientation="horizontal"
                      >
-                        {categories.map((category) => (
-                           <Tabs.Tab
-                              key={category.id}
-                              id={category.id}
-                              className="text-nowrap"
-                           >
-                              {category.name}
-                              <Tabs.Indicator className="rounded-full" />
-                           </Tabs.Tab>
-                        ))}
-                     </Tabs.List>
+                        <Tabs.List
+                           aria-label="Menu categories"
+                           className="w-fit rounded-none"
+                        >
+                           {categories.map((category) => (
+                              <Tabs.Tab
+                                 key={category.id}
+                                 id={category.id}
+                                 className="text-nowrap"
+                              >
+                                 {category.name}
+                                 <Tabs.Indicator className="rounded-full" />
+                              </Tabs.Tab>
+                           ))}
+                        </Tabs.List>
+                     </ScrollShadow>
                   </Tabs.ListContainer>
                </Tabs>
                <Button
@@ -119,40 +151,50 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
                >
                   <ListChevronsDownUp />
                </Button>
-               <Modal.Container
+               <Modal.Backdrop
                   isOpen={modal.isOpen}
                   onOpenChange={modal.setOpen}
-                  placement="auto"
                >
-                  <Modal.Dialog className="sm:min-w-[560px]">
-                     <Modal.CloseTrigger />
-                     <Modal.Header>
-                        <Modal.Heading className="font-semibold">
-                           {t("categories")}
-                        </Modal.Heading>
-                     </Modal.Header>
-                     <Modal.Body>
-                        <ListBox
-                           aria-label="Category navigation"
-                           selectionMode="none"
-                           onAction={handleListBoxAction}
-                        >
-                           {categories.map((category) => (
-                              <ListBox.Item
-                                 key={category.id}
-                                 id={category.id}
-                                 textValue={category.name}
-                                 className={
-                                    activeId === category.id ? "bg-default" : ""
-                                 }
+                  <Modal.Container placement="auto">
+                     <Modal.Dialog className="sm:min-w-[560px]">
+                        <Modal.CloseTrigger />
+                        <Modal.Header>
+                           <Modal.Heading className="font-semibold">
+                              {t("categories")}
+                           </Modal.Heading>
+                        </Modal.Header>
+                        <Modal.Body>
+                           <ScrollShadow
+                              hideScrollBar
+                              size={80}
+                              ref={modalListRef}
+                              className="h-full"
+                           >
+                              <ListBox
+                                 aria-label="Category navigation"
+                                 selectionMode="none"
+                                 onAction={handleListBoxAction}
                               >
-                                 <Label>{category.name}</Label>
-                              </ListBox.Item>
-                           ))}
-                        </ListBox>
-                     </Modal.Body>
-                  </Modal.Dialog>
-               </Modal.Container>
+                                 {categories.map((category) => (
+                                    <ListBox.Item
+                                       key={category.id}
+                                       id={category.id}
+                                       textValue={category.name}
+                                       className={
+                                          activeId === category.id
+                                             ? "bg-default"
+                                             : ""
+                                       }
+                                    >
+                                       <Label>{category.name}</Label>
+                                    </ListBox.Item>
+                                 ))}
+                              </ListBox>
+                           </ScrollShadow>
+                        </Modal.Body>
+                     </Modal.Dialog>
+                  </Modal.Container>
+               </Modal.Backdrop>
             </div>
          </div>
       </>
