@@ -22,8 +22,8 @@ export function InfoModal() {
             {t("information")}
          </Button>
          <Modal.Backdrop isOpen={state.isOpen} onOpenChange={state.setOpen}>
-            <Modal.Container>
-               <Modal.Dialog className="sm:max-w-[400px]">
+            <Modal.Container size="sm">
+               <Modal.Dialog>
                   <>
                      <Modal.CloseTrigger />
                      <Modal.Header>

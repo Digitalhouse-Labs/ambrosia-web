@@ -156,7 +156,7 @@ export function CategoryTabs({ categories }: CategoryTabsProps) {
                   onOpenChange={modal.setOpen}
                >
                   <Modal.Container placement="auto">
-                     <Modal.Dialog className="sm:min-w-[560px]">
+                     <Modal.Dialog>
                         <Modal.CloseTrigger />
                         <Modal.Header>
                            <Modal.Heading className="font-semibold">

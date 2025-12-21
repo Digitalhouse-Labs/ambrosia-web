@@ -121,11 +121,11 @@ export default function BusinessHighlights({ data }: BusinessHighlightsProps) {
    return (
       <div className="flex items-center gap-3">
          <ScrollShadow orientation="horizontal" hideScrollBar>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-x-3">
                {highlights.map((item) => (
                   <Surface
                      key={item.key}
-                     className="flex min-h-13 items-center gap-2 rounded-xl px-4"
+                     className="flex min-h-12 items-center gap-2 rounded-2xl px-4"
                   >
                      <item.icon className="size-4" />
                      <span className="text-sm text-nowrap">{item.label}</span>
@@ -138,7 +138,7 @@ export default function BusinessHighlights({ data }: BusinessHighlightsProps) {
             <Modal.Trigger>
                <Button
                   variant="tertiary"
-                  className="min-h-13 shrink-0 rounded-2xl"
+                  className="min-h-12 shrink-0 rounded-2xl"
                >
                   {t("showAll")}
                   <ChevronRight className="size-4" />
@@ -146,7 +146,7 @@ export default function BusinessHighlights({ data }: BusinessHighlightsProps) {
             </Modal.Trigger>
             <Modal.Backdrop>
                <Modal.Container>
-                  <Modal.Dialog className="max-w-2xl">
+                  <Modal.Dialog>
                      <Modal.CloseTrigger />
                      <Modal.Header>
                         <Modal.Heading>{t("highlightTitle")}</Modal.Heading>
