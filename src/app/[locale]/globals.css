@@ -15,3 +15,12 @@
         display: none;
     }
 }
+
+@layer components {
+    .modal__dialog {
+        @apply p-4
+    }
+    .modal__container {
+        @apply p-3
+    }
+}

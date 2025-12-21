@@ -20,6 +20,7 @@ export default function Gallery() {
       { src: "/gallery/1.jpg", alt: t("alt1") },
       { src: "/gallery/2.jpg", alt: t("alt2") },
       { src: "/gallery/3.jpg", alt: t("alt3") },
+      { src: "/gallery/14.jpg", alt: t("alt14") },
       { src: "/gallery/4.jpg", alt: t("alt4") },
       { src: "/gallery/5.jpg", alt: t("alt5") },
       { src: "/gallery/6.jpg", alt: t("alt6") },
