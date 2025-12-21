@@ -161,7 +161,7 @@ export default function BusinessHighlights({ data }: BusinessHighlightsProps) {
                               {highlights.map((item) => (
                                  <div
                                     key={item.key}
-                                    className="flex items-center gap-3 py-6"
+                                    className="flex items-center gap-4 py-6"
                                  >
                                     <item.icon className="text-foreground size-6" />
                                     <span className="text-foreground">
