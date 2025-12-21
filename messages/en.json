@@ -81,7 +81,8 @@
       "backToHome": "Back to Home",
       "termsLabel": "I agree to the terms",
       "termsDescription": "I have read and agree to the processing of my data.",
-      "privacyPolicy": "Privacy Policy"
+      "privacyPolicy": "Privacy Policy",
+      "dateDescription": "Select your preferred reservation date"
    },
    "Gallery": {
       "alt1": "Amethystos Greek red wine at Restaurant Ambrosia Rueckersdorf",

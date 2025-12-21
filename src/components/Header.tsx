@@ -2,7 +2,7 @@
 
 import LogoAlt from "../../public/logo-alt.svg"
 import Logo from "../../public/logo.svg"
-import { Button } from "@heroui/react"
+import { buttonVariants } from "@heroui/react"
 import { CalendarCheck } from "lucide-react"
 import MenuModal from "@/components/MenuModal"
 import { useTranslations } from "next-intl"
@@ -35,22 +35,29 @@ export default function Header() {
                   </Link>
                </div>
                <div className="flex grow basis-0 justify-end gap-3">
-                  <Button variant="tertiary" asChild className="hidden md:flex">
-                     <Link href="/reservation">
-                        <CalendarCheck />
-                        {t("booking")}
-                     </Link>
-                  </Button>
-                  <Button
-                     variant="tertiary"
-                     isIconOnly
-                     asChild
-                     className="flex md:hidden"
+                  <Link
+                     className={buttonVariants({
+                        variant: "tertiary",
+                        className: "hidden md:flex",
+                     })}
+                     href="/reservation"
+                     aria-label={t("booking")}
                   >
-                     <Link href="/reservation" aria-label={t("booking")}>
-                        <CalendarCheck />
-                     </Link>
-                  </Button>
+                     <CalendarCheck />
+                     {t("booking")}
+                  </Link>
+
+                  <Link
+                     className={buttonVariants({
+                        variant: "tertiary",
+                        isIconOnly: true,
+                        className: "flex md:hidden",
+                     })}
+                     href="/reservation"
+                     aria-label={t("booking")}
+                  >
+                     <CalendarCheck />
+                  </Link>
                </div>
             </div>
          </div>
