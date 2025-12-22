@@ -1,5 +1,7 @@
 import { ReservationForm } from "@/components/ReservationForm"
-import { getTranslations } from "next-intl/server"
+import { use } from "react"
+import { Locale } from "next-intl"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 import { Metadata } from "next"
 import { RecaptchaProvider } from "@/components/RecaptchaProvider"
 
@@ -17,7 +19,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
    }
 }
 
-export default function Page() {
+export default function Page({ params }: Props) {
+   const { locale } = use(params)
+   setRequestLocale(locale as Locale)
+
    return (
       <RecaptchaProvider>
          <ReservationForm />

@@ -1,6 +1,7 @@
-import { getTranslations } from "next-intl/server"
 import { Metadata } from "next"
-import { useTranslations } from "next-intl"
+import { use } from "react"
+import { Locale, useTranslations } from "next-intl"
+import { getTranslations, setRequestLocale } from "next-intl/server"
 
 type Props = {
    params: Promise<{ locale: string }>
@@ -16,12 +17,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
    }
 }
 
-export default function PrivacyPage() {
+export default function PrivacyPage({ params }: Props) {
+   const { locale } = use(params)
+   setRequestLocale(locale as Locale)
    const t = useTranslations("PrivacyPage")
 
    return (
       <div className="mx-auto max-w-5xl px-3 py-16">
-         {/* Last Updated */}
          <div className="mb-16">
             <div className="mx-auto max-w-5xl space-y-1 text-center md:space-y-6">
                <h1 className="text-3xl font-bold text-balance break-all md:text-5xl">
@@ -33,9 +35,7 @@ export default function PrivacyPage() {
             </div>
          </div>
 
-         {/* Content */}
          <article className="prose dark:prose-invert max-w-none">
-            {/* Section 1 */}
             <section>
                <h2>1. Verantwortlicher</h2>
                <p>
@@ -54,10 +54,8 @@ export default function PrivacyPage() {
                </div>
             </section>
 
-            {/* Section 2 */}
             <section>
                <h2>2. Erhebung und Speicherung personenbezogener Daten</h2>
-
                <h3>2.1 Beim Besuch der Website</h3>
                <p>
                   Beim Aufrufen unserer Website werden durch den auf Ihrem
@@ -103,7 +101,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 3 */}
             <section>
                <h2>3. E-Mail-Versand (Resend)</h2>
                <p>
@@ -131,7 +128,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 4 */}
             <section>
                <h2>4. Google reCAPTCHA</h2>
                <p>
@@ -162,7 +158,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 5 */}
             <section>
                <h2>5. Google Analytics</h2>
                <p>
@@ -197,7 +192,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 6 */}
             <section>
                <h2>6. Google Places API</h2>
                <p>
@@ -238,7 +232,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 8 */}
             <section>
                <h2>8. Cookies</h2>
                <p>
@@ -259,7 +252,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 9 */}
             <section>
                <h2>9. Ihre Rechte</h2>
                <p>Sie haben folgende Rechte hinsichtlich Ihrer Daten:</p>
@@ -295,7 +287,6 @@ export default function PrivacyPage() {
                </p>
             </section>
 
-            {/* Section 10 */}
             <section>
                <h2>10. Änderungen dieser Datenschutzerklärung</h2>
                <p>
