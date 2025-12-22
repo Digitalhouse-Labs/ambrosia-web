@@ -1,6 +1,5 @@
-import { getCurrentYear } from "@/lib/utils"
+"use client"
 
-export default async function FooterYear() {
-   const year = await getCurrentYear()
-   return <>{year}</>
+export default function FooterYear() {
+   return <>{new Date().getFullYear()}</>
 }

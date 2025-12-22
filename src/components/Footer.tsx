@@ -1,15 +1,10 @@
-"use client"
-
 import { useTranslations } from "next-intl"
 import Link from "next/link"
 import Facebook from "../../public/facebook.svg"
 import Instagram from "../../public/instagram.svg"
+import FooterYear from "@/components/FooterYear"
 
-interface FooterProps {
-   year: number
-}
-
-export default function Footer({ year }: FooterProps) {
+export default function Footer() {
    const t = useTranslations("Footer")
 
    return (
@@ -21,7 +16,7 @@ export default function Footer({ year }: FooterProps) {
                      suppressHydrationWarning
                      className="text-foreground/75 text-sm text-balance"
                   >
-                     &copy; {year} Ambrosia Restaurant. {t("rights")}
+                     &copy; <FooterYear /> Ambrosia Restaurant. {t("rights")}
                   </span>
                   <span className="hidden md:block" aria-hidden="true">
                      &middot;
