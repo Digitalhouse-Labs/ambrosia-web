@@ -145,8 +145,8 @@ export default function BusinessHighlights({ data }: BusinessHighlightsProps) {
                </Button>
             </Modal.Trigger>
             <Modal.Backdrop>
-               <Modal.Container>
-                  <Modal.Dialog className="max-h-160">
+               <Modal.Container placement="bottom">
+                  <Modal.Dialog className="max-h-140">
                      <Modal.CloseTrigger />
                      <Modal.Header>
                         <Modal.Heading>{t("highlightTitle")}</Modal.Heading>
