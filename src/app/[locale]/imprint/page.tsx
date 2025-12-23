@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { use } from "react"
 import { Locale, useTranslations } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
+import { siteConfig } from "@/config/site"
 
 type Props = {
    params: Promise<{ locale: string }>
@@ -37,10 +38,12 @@ export default function ImpressumPage({ params }: Props) {
                <h2>Angaben gemäß § 5 TMG</h2>
                <div className="not-prose not-italic">
                   <p>
-                     <strong>Ambrosia Restaurant</strong>
+                     <strong>{siteConfig.name}</strong>
                   </p>
-                  <p>Hauptstraße 37</p>
-                  <p>90607 Rückersdorf</p>
+                  <p>H{siteConfig.contact.street}</p>
+                  <p>
+                     {siteConfig.contact.postalCode} {siteConfig.contact.city}
+                  </p>
                   <p>Deutschland</p>
                </div>
             </section>
@@ -48,14 +51,14 @@ export default function ImpressumPage({ params }: Props) {
             <section>
                <h2>Kontakt</h2>
                <div className="not-prose not-italic">
-                  <p>Telefon: +49 911 860 442 77</p>
-                  <p>E-Mail: info@ambrosia-rueckersdorf.de</p>
+                  <p>Telefon: {siteConfig.contact.phone}</p>
+                  <p>E-Mail: {siteConfig.contact.email}</p>
                </div>
             </section>
 
             <section>
                <h2>Vertreten durch</h2>
-               <p>Antonia Siouta</p>
+               <p>{siteConfig.legal.representedBy}</p>
             </section>
 
             <section>
@@ -64,15 +67,18 @@ export default function ImpressumPage({ params }: Props) {
                   Umsatzsteuer-Identifikationsnummer gemäß § 27 a
                   Umsatzsteuergesetz:
                </p>
-               <p>DE370541669</p>
+               <p>{siteConfig.legal.vatId}</p>
             </section>
 
             <section>
                <h2>Zuständige Aufsichtsbehörde</h2>
                <div className="not-prose not-italic">
-                  <p>Landratsamt Nürnberger Land</p>
-                  <p>Waldluststraße 1</p>
-                  <p>91207 Lauf an der Pegnitz</p>
+                  <p>{siteConfig.legal.authority.name}</p>
+                  <p>{siteConfig.legal.authority.street}</p>
+                  <p>
+                     {siteConfig.legal.authority.postalCode}{" "}
+                     {siteConfig.legal.authority.city}
+                  </p>
                </div>
             </section>
 

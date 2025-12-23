@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { use } from "react"
 import { Locale, useTranslations } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
+import { siteConfig } from "@/config/site"
 
 type Props = {
    params: Promise<{ locale: string }>
@@ -30,7 +31,7 @@ export default function PrivacyPage({ params }: Props) {
                   {t("title")}
                </h1>
                <span className="text-foreground/75 text-sm">
-                  {t("lastUpdated")}: 11. Dezember 2025
+                  {t("lastUpdated")}: {siteConfig.legal.privacyLastUpdated}
                </span>
             </div>
          </div>
@@ -44,13 +45,15 @@ export default function PrivacyPage({ params }: Props) {
                </p>
                <div className="not-prose not-italic">
                   <p>
-                     <strong>Ambrosia Restaurant</strong>
+                     <strong>{siteConfig.name}</strong>
                   </p>
-                  <p>Hauptstraße 37</p>
-                  <p>90607 Rückersdorf</p>
+                  <p>{siteConfig.contact.street}</p>
+                  <p>
+                     {siteConfig.contact.postalCode} {siteConfig.contact.city}
+                  </p>
                   <p>Deutschland</p>
-                  <p className="mt-4">Telefon: +49 911 860 442 77</p>
-                  <p>E-Mail: info@ambrosia-rueckersdorf.de</p>
+                  <p className="mt-4">Telefon: {siteConfig.contact.phone}</p>
+                  <p>E-Mail: {siteConfig.contact.email}</p>
                </div>
             </section>
 

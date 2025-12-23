@@ -7,6 +7,7 @@ import { CalendarCheck } from "lucide-react"
 import MenuModal from "@/components/MenuModal"
 import { useTranslations } from "next-intl"
 import { Link } from "@/i18n/navigation"
+import { siteConfig } from "@/config/site"
 
 export default function Header() {
    const t = useTranslations("Header")
@@ -22,7 +23,7 @@ export default function Header() {
                   <Link
                      href="/"
                      className="hidden shrink-0 md:block"
-                     aria-label="Ambrosia griechisches restaurant"
+                     aria-label={`${siteConfig.shortName} griechisches restaurant`}
                   >
                      <LogoAlt className="h-auto w-48" />
                   </Link>

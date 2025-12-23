@@ -1,4 +1,3 @@
-// components/EmailTemplate.tsx
 import {
    Body,
    Container,
@@ -11,6 +10,7 @@ import {
    Tailwind,
    Text,
 } from "@react-email/components"
+import { siteConfig } from "@/config/site"
 
 interface ReservationEmailProps {
    firstName: string
@@ -55,10 +55,10 @@ const EmailTemplate = ({
                <Container className="mx-auto mb-10 max-w-[465px] p-5">
                   <Section className="mt-10">
                      <Img
-                        src="https://ambrosia-rueckersdorf.de/logo-circle.svg"
+                        src={`${siteConfig.url}/logo-circle.svg`}
                         width="60"
                         height="60"
-                        alt="Ambrosia Logo"
+                        alt={`${siteConfig.name} Logo`}
                         className="mx-auto my-0"
                      />
                   </Section>
@@ -66,7 +66,7 @@ const EmailTemplate = ({
                      Neue Reservierung
                   </Heading>
                   <Text className="text-start text-sm text-white">
-                     Hallo Ambrosia,
+                     Hallo {siteConfig.shortName},
                   </Text>
                   <Text className="text-start text-sm leading-relaxed text-white">
                      Sie haben eine neue Reservierung von:
@@ -107,7 +107,7 @@ const EmailTemplate = ({
                   <Text className="mt-8 text-start text-sm text-white">
                      Mit freundlichen Grüßen,
                      <br />
-                     Ambrosia Reservierungssystem
+                     {siteConfig.shortName} Reservierungssystem
                   </Text>
                </Container>
             </Body>

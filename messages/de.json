@@ -1,19 +1,27 @@
 {
-   "HomePage": {
-      "highlightTitle": "Was dieser Ort bietet",
-      "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit.",
-      "houseFavorites": "Haus-Spezialitäten",
-      "viewFullMenu": "Zur Speisekarte"
+   "Metadata": {
+      "title": "Ambrosia | Griechisches Restaurant in Rückersdorf bei Nürnberg",
+      "description": "Authentisch griechisch essen in Rückersdorf. Gyros, Souvlaki, Meeresfrüchte und griechische Spezialitäten.",
+      "ogDescription": "Genießen Sie authentische griechische Küche in gemütlicher Atmosphäre. Ihr Grieche in Rückersdorf.",
+      "keywords": [
+         "griechisches Restaurant Rückersdorf",
+         "Grieche Rückersdorf",
+         "griechisch essen Nürnberg",
+         "griechisches Restaurant Nürnberg Umgebung",
+         "Grieche Lauf an der Pegnitz",
+         "griechische Küche Mittelfranken",
+         "Gyros Rückersdorf",
+         "Souvlaki Nürnberg",
+         "griechische Spezialitäten",
+         "Restaurant Rückersdorf",
+         "Ambrosia Restaurant",
+         "Griechische Küche Bayern"
+      ]
    },
-   "LocaleSwitcher": {
-      "label": "Sprache ändern",
-      "locale": "{locale, select, de {Deutsch} en {English} other {Unbekannt}}",
-      "changeLanguage": "Sprache ändern"
+   "Manifest": {
+      "description": "Griechisches Restaurant in Rückersdorf bei Nürnberg. Authentische griechische Küche, frische Zutaten und herzliche Gastfreundschaft."
    },
-   "GoogleReviews": {
-      "excellent": "Hervorragend",
-      "basedOn": "Basierend auf {reviews} Bewertungen"
-   },
+
    "Navigation": {
       "menu": "Menu",
       "home": "Startseite",
@@ -34,16 +42,38 @@
       "facebookLink": "Besuchen Sie uns auf Facebook",
       "instagramLink": "Besuchen Sie uns auf Instagram"
    },
-   "InformationModal": {
-      "information": "Informationen",
-      "informationDescription": "Sehen Sie unsere Adresse, Kontaktdaten und Zahlungsmethoden.",
-      "businessInformation": "Unternehmens informationen",
-      "companyName": "Firmenname",
-      "phone": "Telefon",
-      "address": "Adresse",
-      "paymentMethods": "Zahlungsmethoden",
-      "review": "Bewerten Sie uns"
+   "LocaleSwitcher": {
+      "label": "Sprache ändern",
+      "locale": "{locale, select, de {Deutsch} en {English} other {Unbekannt}}",
+      "changeLanguage": "Sprache ändern"
    },
+
+   "HomePage": {
+      "highlightTitle": "Was dieser Ort bietet",
+      "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit.",
+      "houseFavorites": "Haus-Spezialitäten",
+      "viewFullMenu": "Zur Speisekarte"
+   },
+   "MenuPage": {
+      "metaTitle": "Speisekarte | Ambrosia Restaurant Rückersdorf",
+      "metaDescription": "Entdecken Sie unsere griechischen Spezialitäten: Gyros, Souvlaki, frischer Fisch und mehr. Authentische griechische Küche in Rückersdorf."
+   },
+   "ReservationPage": {
+      "metaTitle": "Tisch reservieren | Ambrosia Restaurant",
+      "metaDescription": "Reservieren Sie jetzt Ihren Tisch im Ambrosia Restaurant in Rückersdorf bei Nürnberg. Online-Reservierung schnell und einfach."
+   },
+   "ImpressumPage": {
+      "metaTitle": "Impressum | Ambrosia Restaurant",
+      "metaDescription": "Impressum des Ambrosia Restaurant in Rückersdorf. Angaben gemäß § 5 TMG.",
+      "title": "Impressum"
+   },
+   "PrivacyPage": {
+      "metaTitle": "Datenschutzerklärung | Ambrosia Restaurant",
+      "metaDescription": "Datenschutzerklärung des Ambrosia Restaurant in Rückersdorf. Informationen zur Verarbeitung Ihrer personenbezogenen Daten.",
+      "title": "Datenschutzerklärung",
+      "lastUpdated": "Stand"
+   },
+
    "Menu": {
       "categories": "Kategories"
    },
@@ -59,6 +89,7 @@
       "telephone": "Telefon",
       "telephonePlaceholder": "Telefonnummer",
       "date": "Datum",
+      "dateDescription": "Wähle dein Wunschdatum",
       "time": "Uhrzeit",
       "persons": "Anzahl der Personen",
       "personsPlaceholder": "Wie viele Personen?",
@@ -72,73 +103,26 @@
       "occasionOther": "Andere",
       "description": "Beschreibung (Optional)",
       "descriptionPlaceholder": "Besondere Wünsche oder Anmerkungen?",
-      "submit": "Reservierung absenden",
-      "submitting": "Wird gesendet...",
-      "success": "Reservierung erfolgreich gesendet!",
-      "error": "Fehler",
-      "successTitle": "Vielen Dank!",
-      "successMessage": "Ihre Reservierung wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
-      "backToHome": "Zurück zur Startseite",
       "termsLabel": "Ich stimme den Bedingungen zu",
       "termsDescription": "Ich habe die Datenschutzerklärung gelesen und stimme der Verarbeitung meiner Daten zu.",
       "privacyPolicy": "Datenschutzerklärung",
-      "dateDescription": "Wähle dein Wunschdatum"
+      "submit": "Reservierung absenden",
+      "submitting": "Wird gesendet...",
+      "success": "Reservierung erfolgreich gesendet!",
+      "successTitle": "Vielen Dank!",
+      "successMessage": "Ihre Reservierung wurde erfolgreich gesendet. Wir werden uns in Kürze bei Ihnen melden.",
+      "error": "Fehler",
+      "backToHome": "Zurück zur Startseite"
    },
-   "Gallery": {
-      "alt1": "Amethystos griechischer Rotwein im Restaurant Ambrosia Rückersdorf",
-      "alt2": "Garides Garnelen mit Reis - Griechische Meeresfrüchte Spezialität",
-      "alt3": "Skordopsomo - Griechisches Knoblauchbrot frisch aus dem Ofen",
-      "alt4": "Souvlaki mit Calamari und Reis - Griechisches Gericht vom Grill",
-      "alt5": "Griechisches Restaurant Ambrosia Innenansicht Rückersdorf",
-      "alt6": "Gemütliche Atmosphäre im Restaurant Ambrosia Rückersdorf",
-      "alt7": "Restaurant Ambrosia Wandgemälde griechische Dekoration",
-      "alt8": "Galaktobouriko - Traditionelles griechisches Dessert mit Grießcreme",
-      "alt9": "Baklava - Griechisches Honig-Nuss-Gebäck Dessert",
-      "alt10": "Loukoumades - Griechische Honigbällchen Nachspeise",
-      "alt11": "Metaxa und Chivas Whisky Auswahl an der Bar",
-      "alt12": "Griechischer Ouzo - Traditioneller Aperitif aus Griechenland",
-      "alt13": "Amethystos Weißwein aus Griechenland",
-      "alt14": "Gambas garlic prawns - Greek seafood specialty at Restaurant Ambrosia Rueckersdorf Bavaria",
-      "galleryTitle": "Einblicke",
-      "galleryDescription": "Authentische griechische Küche im Herzen von Rückersdorf"
-   },
-   "Metadata": {
-      "title": "Ambrosia | Griechisches Restaurant in Rückersdorf bei Nürnberg",
-      "description": "Authentisch griechisch essen in Rückersdorf. Gyros, Souvlaki, Meeresfrüchte und griechische Spezialitäten.",
-      "ogDescription": "Genießen Sie authentische griechische Küche in gemütlicher Atmosphäre. Ihr Grieche in Rückersdorf.",
-      "keywords": [
-         "griechisches Restaurant Rückersdorf",
-         "Grieche Rückersdorf",
-         "griechisch essen Nürnberg",
-         "griechisches Restaurant Nürnberg Umgebung",
-         "Grieche Lauf an der Pegnitz",
-         "griechische Küche Mittelfranken",
-         "Gyros Rückersdorf",
-         "Souvlaki Nürnberg",
-         "griechische Spezialitäten",
-         "Restaurant Rückersdorf",
-         "Ambrosia Restaurant",
-         "Griechische Küche Bayern"
-      ]
-   },
-   "MenuPage": {
-      "metaTitle": "Speisekarte | Ambrosia Restaurant Rückersdorf",
-      "metaDescription": "Entdecken Sie unsere griechischen Spezialitäten: Gyros, Souvlaki, frischer Fisch und mehr. Authentische griechische Küche in Rückersdorf."
-   },
-   "ReservationPage": {
-      "metaTitle": "Tisch reservieren | Ambrosia Restaurant",
-      "metaDescription": "Reservieren Sie jetzt Ihren Tisch im Ambrosia Restaurant in Rückersdorf bei Nürnberg. Online-Reservierung schnell und einfach."
-   },
-   "PrivacyPage": {
-      "metaTitle": "Datenschutzerklärung | Ambrosia Restaurant",
-      "metaDescription": "Datenschutzerklärung des Ambrosia Restaurant in Rückersdorf. Informationen zur Verarbeitung Ihrer personenbezogenen Daten.",
-      "title": "Datenschutzerklärung",
-      "lastUpdated": "Stand"
-   },
-   "ImpressumPage": {
-      "metaTitle": "Impressum | Ambrosia Restaurant",
-      "metaDescription": "Impressum des Ambrosia Restaurant in Rückersdorf. Angaben gemäß § 5 TMG.",
-      "title": "Impressum"
+   "InformationModal": {
+      "information": "Informationen",
+      "informationDescription": "Sehen Sie unsere Adresse, Kontaktdaten und Zahlungsmethoden.",
+      "businessInformation": "Unternehmens informationen",
+      "companyName": "Firmenname",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "paymentMethods": "Zahlungsmethoden",
+      "review": "Bewerten Sie uns"
    },
    "BusinessHighlights": {
       "highlightTitle": "Was dieser Ort bietet",
@@ -156,5 +140,27 @@
       "wheelchairAccessible": "Barrierefrei",
       "freeParking": "Kostenlose Parkplätze",
       "showAll": "Alle anzeigen"
+   },
+   "GoogleReviews": {
+      "excellent": "Hervorragend",
+      "basedOn": "Basierend auf {reviews} Bewertungen"
+   },
+   "Gallery": {
+      "galleryTitle": "Einblicke",
+      "galleryDescription": "Authentische griechische Küche im Herzen von Rückersdorf",
+      "alt1": "Amethystos griechischer Rotwein im Restaurant Ambrosia Rückersdorf",
+      "alt2": "Garides Garnelen mit Reis - Griechische Meeresfrüchte Spezialität",
+      "alt3": "Skordopsomo - Griechisches Knoblauchbrot frisch aus dem Ofen",
+      "alt4": "Souvlaki mit Calamari und Reis - Griechisches Gericht vom Grill",
+      "alt5": "Griechisches Restaurant Ambrosia Innenansicht Rückersdorf",
+      "alt6": "Gemütliche Atmosphäre im Restaurant Ambrosia Rückersdorf",
+      "alt7": "Restaurant Ambrosia Wandgemälde griechische Dekoration",
+      "alt8": "Galaktobouriko - Traditionelles griechisches Dessert mit Grießcreme",
+      "alt9": "Baklava - Griechisches Honig-Nuss-Gebäck Dessert",
+      "alt10": "Loukoumades - Griechische Honigbällchen Nachspeise",
+      "alt11": "Metaxa und Chivas Whisky Auswahl an der Bar",
+      "alt12": "Griechischer Ouzo - Traditioneller Aperitif aus Griechenland",
+      "alt13": "Amethystos Weißwein aus Griechenland",
+      "alt14": "Gambas garlic prawns - Greek seafood specialty at Restaurant Ambrosia Rueckersdorf Bavaria"
    }
 }

@@ -3,6 +3,7 @@ import Link from "next/link"
 import Facebook from "../../public/facebook.svg"
 import Instagram from "../../public/instagram.svg"
 import FooterYear from "@/components/FooterYear"
+import { siteConfig } from "@/config/site"
 
 export default function Footer() {
    const t = useTranslations("Footer")
@@ -16,7 +17,7 @@ export default function Footer() {
                      suppressHydrationWarning
                      className="text-foreground/75 text-sm text-balance"
                   >
-                     &copy; <FooterYear /> Ambrosia Restaurant. {t("rights")}
+                     &copy; <FooterYear /> {siteConfig.name}. {t("rights")}
                   </span>
                   <span className="hidden md:block" aria-hidden="true">
                      &middot;
@@ -32,7 +33,7 @@ export default function Footer() {
                </div>
                <div className="flex items-center gap-x-6">
                   <Link
-                     href="https://www.facebook.com/resambrosia"
+                     href={siteConfig.links.facebook}
                      target="_blank"
                      rel="noopener noreferrer"
                      aria-label={t("facebookLink")}
@@ -40,7 +41,7 @@ export default function Footer() {
                      <Facebook className="text-foreground h-auto w-6 shrink-0" />
                   </Link>
                   <Link
-                     href="https://www.instagram.com/resambrosia"
+                     href={siteConfig.links.instagram}
                      target="_blank"
                      rel="noopener noreferrer"
                      aria-label={t("instagramLink")}

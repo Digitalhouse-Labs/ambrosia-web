@@ -1,19 +1,24 @@
 {
-   "HomePage": {
-      "highlightTitle": "What this place offers",
-      "description": "At Ambrosia Restaurant, every dish is a tribute to Greek tradition and every moment is crafted for today. We unite the warmth of Greek hospitality, the richness of timeless flavors, and the spirit of modern life.",
-      "houseFavorites": "House Favorites",
-      "viewFullMenu": "View Full Menu"
+   "Metadata": {
+      "title": "Ambrosia | Greek Restaurant in Rueckersdorf near Nuremberg",
+      "description": "Authentic Greek dining in Rueckersdorf. Gyros, Souvlaki, seafood and Greek specialties.",
+      "ogDescription": "Enjoy authentic Greek cuisine in a cozy atmosphere. Your Greek restaurant in Rueckersdorf.",
+      "keywords": [
+         "Greek restaurant Rueckersdorf",
+         "Greek restaurant near Nuremberg",
+         "Greek food Nuremberg",
+         "Gyros Rueckersdorf",
+         "Souvlaki Nuremberg",
+         "Greek specialties",
+         "Restaurant Rueckersdorf",
+         "Ambrosia Restaurant",
+         "Greek cuisine Bavaria"
+      ]
    },
-   "LocaleSwitcher": {
-      "label": "Change language",
-      "locale": "{locale, select, de {Deutsch} en {English} other {Unknown}}",
-      "changeLanguage": "Change language"
+   "Manifest": {
+      "description": "Greek restaurant in Rückersdorf near Nuremberg. Authentic Greek cuisine, fresh ingredients and warm hospitality."
    },
-   "GoogleReviews": {
-      "excellent": "Excellent",
-      "basedOn": "Based on {reviews} reviews"
-   },
+
    "Navigation": {
       "menu": "Menu",
       "home": "Home",
@@ -34,18 +39,40 @@
       "facebookLink": "Visit us on Facebook",
       "instagramLink": "Visit us on Instagram"
    },
-   "InformationModal": {
-      "information": "Information",
-      "informationDescription": "See our address, contact details and payment methods.",
-      "businessInformation": "Business Information",
-      "companyName": "Company Name",
-      "phone": "Phone",
-      "address": "Address",
-      "paymentMethods": "Payment Methods",
-      "review": "Review us"
+   "LocaleSwitcher": {
+      "label": "Change language",
+      "locale": "{locale, select, de {Deutsch} en {English} other {Unknown}}",
+      "changeLanguage": "Change language"
    },
+
+   "HomePage": {
+      "highlightTitle": "What this place offers",
+      "description": "At Ambrosia Restaurant, every dish is a tribute to Greek tradition and every moment is crafted for today. We unite the warmth of Greek hospitality, the richness of timeless flavors, and the spirit of modern life.",
+      "houseFavorites": "House Favorites",
+      "viewFullMenu": "View Full Menu"
+   },
+   "MenuPage": {
+      "metaTitle": "Menu | Ambrosia Restaurant Rückersdorf",
+      "metaDescription": "Discover our Greek specialties: Gyros, Souvlaki, fresh fish and more. Authentic Greek cuisine in Rueckersdorf."
+   },
+   "ReservationPage": {
+      "metaTitle": "Book a Table | Ambrosia Restaurant Rueckersdorf",
+      "metaDescription": "Reserve your table now at Ambrosia Restaurant in Rueckersdorf near Nuremberg. Quick and easy online reservation."
+   },
+   "ImpressumPage": {
+      "metaTitle": "Legal Notice | Ambrosia Restaurant",
+      "metaDescription": "Legal notice of Ambrosia Restaurant in Rueckersdorf. Information according to § 5 TMG.",
+      "title": "Legal Notice"
+   },
+   "PrivacyPage": {
+      "metaTitle": "Privacy Policy | Ambrosia Restaurant",
+      "metaDescription": "Privacy policy of Ambrosia Restaurant in Rueckersdorf. Information about the processing of your personal data.",
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated"
+   },
+
    "Menu": {
-      "categories": "Kategories"
+      "categories": "Categories"
    },
    "ReservationForm": {
       "title": "Ambrosia - Table Reservation",
@@ -59,6 +86,7 @@
       "telephone": "Telephone",
       "telephonePlaceholder": "Enter your phone number",
       "date": "Date",
+      "dateDescription": "Select your preferred reservation date",
       "time": "Time",
       "persons": "Number of Persons",
       "personsPlaceholder": "How many persons?",
@@ -72,70 +100,26 @@
       "occasionOther": "Other",
       "description": "Description (Optional)",
       "descriptionPlaceholder": "Any special requests or notes?",
-      "submit": "Submit Reservation",
-      "submitting": "Submitting...",
-      "success": "Reservation submitted successfully!",
-      "error": "Error",
-      "successTitle": "Thank You!",
-      "successMessage": "Your reservation has been successfully submitted. We will contact you shortly.",
-      "backToHome": "Back to Home",
       "termsLabel": "I agree to the terms",
       "termsDescription": "I have read and agree to the processing of my data.",
       "privacyPolicy": "Privacy Policy",
-      "dateDescription": "Select your preferred reservation date"
+      "submit": "Submit Reservation",
+      "submitting": "Submitting...",
+      "success": "Reservation submitted successfully!",
+      "successTitle": "Thank You!",
+      "successMessage": "Your reservation has been successfully submitted. We will contact you shortly.",
+      "error": "Error",
+      "backToHome": "Back to Home"
    },
-   "Gallery": {
-      "alt1": "Amethystos Greek red wine at Restaurant Ambrosia Rueckersdorf",
-      "alt2": "Garides shrimp with rice - Greek seafood specialty",
-      "alt3": "Skordopsomo - Greek garlic bread fresh from the oven",
-      "alt4": "Souvlaki with calamari and rice - Greek grilled dish",
-      "alt5": "Greek restaurant Ambrosia interior Rueckersdorf",
-      "alt6": "Cozy atmosphere at Restaurant Ambrosia Rueckersdorf",
-      "alt7": "Restaurant Ambrosia wall painting Greek decoration",
-      "alt8": "Galaktobouriko - Traditional Greek semolina custard dessert",
-      "alt9": "Baklava - Greek honey nut pastry dessert",
-      "alt10": "Loukoumades - Greek honey dumplings dessert",
-      "alt11": "Metaxa and Chivas whisky selection at the bar",
-      "alt12": "Greek Ouzo - Traditional aperitif from Greece",
-      "alt13": "Amethystos white wine from Greece",
-      "alt14": "Gambas Knoblauchgarnelen - Griechische Meeresfrüchte im Restaurant Ambrosia Rückersdorf Bayern",
-      "galleryTitle": "Insights",
-      "galleryDescription": "Authentic Greek cuisine in the heart of Rueckersdorf"
-   },
-   "Metadata": {
-      "title": "Ambrosia | Greek Restaurant in Rueckersdorf near Nuremberg",
-      "description": "Authentic Greek dining in Rueckersdorf. Gyros, Souvlaki, seafood and Greek specialties.",
-      "ogDescription": "Enjoy authentic Greek cuisine in a cozy atmosphere. Your Greek restaurant in Rueckersdorf.",
-      "keywords": [
-         "Greek restaurant Rueckersdorf",
-         "Greek restaurant near Nuremberg",
-         "Greek food Nuremberg",
-         "Gyros Rueckersdorf",
-         "Souvlaki Nuremberg",
-         "Greek specialties",
-         "Restaurant Rueckersdorf",
-         "Ambrosia Restaurant",
-         "Greek cuisine Bavaria"
-      ]
-   },
-   "MenuPage": {
-      "metaTitle": "Menu | Ambrosia Restaurant Rückersdorf",
-      "metaDescription": "Discover our Greek specialties: Gyros, Souvlaki, fresh fish and more. Authentic Greek cuisine in Rueckersdorf."
-   },
-   "ReservationPage": {
-      "metaTitle": "Book a Table | Ambrosia Restaurant Rueckersdorf",
-      "metaDescription": "Reserve your table now at Ambrosia Restaurant in Rueckersdorf near Nuremberg. Quick and easy online reservation."
-   },
-   "PrivacyPage": {
-      "metaTitle": "Privacy Policy | Ambrosia Restaurant",
-      "metaDescription": "Privacy policy of Ambrosia Restaurant in Rueckersdorf. Information about the processing of your personal data.",
-      "title": "Privacy Policy",
-      "lastUpdated": "Last updated"
-   },
-   "ImpressumPage": {
-      "metaTitle": "Legal Notice | Ambrosia Restaurant",
-      "metaDescription": "Legal notice of Ambrosia Restaurant in Rueckersdorf. Information according to § 5 TMG.",
-      "title": "Legal Notice"
+   "InformationModal": {
+      "information": "Information",
+      "informationDescription": "See our address, contact details and payment methods.",
+      "businessInformation": "Business Information",
+      "companyName": "Company Name",
+      "phone": "Phone",
+      "address": "Address",
+      "paymentMethods": "Payment Methods",
+      "review": "Review us"
    },
    "BusinessHighlights": {
       "highlightTitle": "What this place offers",
@@ -153,5 +137,27 @@
       "wheelchairAccessible": "Wheelchair accessible",
       "freeParking": "Free parking",
       "showAll": "Show all"
+   },
+   "GoogleReviews": {
+      "excellent": "Excellent",
+      "basedOn": "Based on {reviews} reviews"
+   },
+   "Gallery": {
+      "galleryTitle": "Insights",
+      "galleryDescription": "Authentic Greek cuisine in the heart of Rueckersdorf",
+      "alt1": "Amethystos Greek red wine at Restaurant Ambrosia Rueckersdorf",
+      "alt2": "Garides shrimp with rice - Greek seafood specialty",
+      "alt3": "Skordopsomo - Greek garlic bread fresh from the oven",
+      "alt4": "Souvlaki with calamari and rice - Greek grilled dish",
+      "alt5": "Greek restaurant Ambrosia interior Rueckersdorf",
+      "alt6": "Cozy atmosphere at Restaurant Ambrosia Rueckersdorf",
+      "alt7": "Restaurant Ambrosia wall painting Greek decoration",
+      "alt8": "Galaktobouriko - Traditional Greek semolina custard dessert",
+      "alt9": "Baklava - Greek honey nut pastry dessert",
+      "alt10": "Loukoumades - Greek honey dumplings dessert",
+      "alt11": "Metaxa and Chivas whisky selection at the bar",
+      "alt12": "Greek Ouzo - Traditional aperitif from Greece",
+      "alt13": "Amethystos white wine from Greece",
+      "alt14": "Gambas garlic prawns - Greek seafood specialty at Restaurant Ambrosia Rueckersdorf Bavaria"
    }
 }

@@ -1,4 +1,4 @@
-const CACHE_NAME = "ambrosia-v1"
+const CACHE_NAME = "app-cache-v1"
 
 self.addEventListener("install", (event) => {
    self.skipWaiting()

@@ -22,6 +22,7 @@ import { Link, usePathname, useRouter } from "@/i18n/navigation"
 import LogoCircle from "../../public/logo-circle.svg"
 import LocaleSwitcher from "@/components/LocaleSwitcher"
 import { ThemeSwitch } from "@/components/ThemeSwitch"
+import { siteConfig } from "@/config/site"
 
 const menuItemClass =
    "min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70"
@@ -57,7 +58,7 @@ export default function MenuModal() {
          </Modal.Trigger>
          <Modal.Backdrop>
             <Modal.Container>
-               <Modal.Dialog className="sm:min-w-[430px]">
+               <Modal.Dialog>
                   {({ close }) => (
                      <>
                         <Modal.Header className="pb-3">
@@ -99,7 +100,7 @@ export default function MenuModal() {
                            </Link>
 
                            <a
-                              href="tel:+4991186044277"
+                              href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
                               className={buttonVariants({
                                  variant: "ghost",
                                  className: menuItemClass,
@@ -112,7 +113,7 @@ export default function MenuModal() {
                            <a
                               target="_blank"
                               rel="noopener noreferrer"
-                              href="https://maps.app.goo.gl/YM72KkujVzyrEVzM6"
+                              href={siteConfig.links.googleMaps}
                               className={buttonVariants({
                                  variant: "ghost",
                                  className: menuItemClass,

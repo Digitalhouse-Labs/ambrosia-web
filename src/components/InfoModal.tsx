@@ -10,6 +10,7 @@ import AmericanExpress from "../../public/cards/american-express.svg"
 import ApplePay from "../../public/cards/apple-pay.svg"
 import GooglePay from "../../public/cards/google-pay.svg"
 import { useTranslations } from "next-intl"
+import { siteConfig } from "@/config/site"
 
 export function InfoModal() {
    const state = useOverlayState()
@@ -60,18 +61,23 @@ export function InfoModal() {
                            <address className="flex flex-wrap items-center gap-x-4 not-italic">
                               <ul className="*:text-foreground/75 flex flex-col gap-y-1 *:text-xs">
                                  <li>
-                                    {t("companyName")}: Ambrosia Restaurant
+                                    {t("companyName")}: {siteConfig.name}
                                  </li>
                                  <li>
                                     Email:{" "}
-                                    <a href="mailto:info@ambrosia-rueckersdorf.de">
-                                       info@ambrosia-rueckersdorf.de
+                                    <a
+                                       href={`mailto:${siteConfig.contact.email}`}
+                                    >
+                                       {siteConfig.contact.email}
                                     </a>
                                  </li>
-                                 <li>{t("phone")}: +49 911 860 442 77</li>
                                  <li>
-                                    {t("address")}: Hauptstraße 37, 90607
-                                    Rückersdorf
+                                    {t("phone")}: {siteConfig.contact.phone}
+                                 </li>
+                                 <li>
+                                    {t("address")}: {siteConfig.contact.street},{" "}
+                                    {siteConfig.contact.postalCode}{" "}
+                                    {siteConfig.contact.city}
                                  </li>
                               </ul>
                            </address>

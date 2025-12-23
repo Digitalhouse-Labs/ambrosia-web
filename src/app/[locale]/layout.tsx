@@ -11,6 +11,7 @@ import { ThemeProviderNext } from "@/components/ThemeProviderNext"
 import { GoogleAnalytics } from "@next/third-parties/google"
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister"
 import Footer from "@/components/Footer"
+import { siteConfig } from "@/config/site"
 
 export const viewport: Viewport = {
    themeColor: [
@@ -30,7 +31,7 @@ export async function generateMetadata({
    const t = await getTranslations({ locale, namespace: "Metadata" })
 
    return {
-      metadataBase: new URL("https://www.ambrosia-rueckersdorf.de"),
+      metadataBase: new URL(siteConfig.url),
       alternates: {
          canonical: `/${locale}`,
          languages: {
@@ -56,14 +57,14 @@ export async function generateMetadata({
       openGraph: {
          title: t("title"),
          description: t("ogDescription"),
-         url: "https://www.ambrosia-rueckersdorf.de",
-         siteName: "Ambrosia Restaurant",
+         url: siteConfig.url,
+         siteName: siteConfig.name,
          locale: locale === "de" ? "de_DE" : "en_US",
          type: "website",
          images: [
             {
-               url: "https://www.ambrosia-rueckersdorf.de/og-image.jpg",
-               alt: "Ambrosia Restaurant",
+               url: `${siteConfig.url}${siteConfig.ogImage}`,
+               alt: siteConfig.name,
             },
          ],
       },
@@ -72,7 +73,7 @@ export async function generateMetadata({
       },
       appleWebApp: {
          capable: true,
-         title: "Ambrosia Restaurant",
+         title: siteConfig.name,
          statusBarStyle: "default",
       },
       robots: {
@@ -107,48 +108,34 @@ export default async function RootLayout({
    const jsonLd = {
       "@context": "https://schema.org",
       "@type": "Restaurant",
-      name: "Ambrosia Restaurant",
-      image: "https://www.ambrosia-rueckersdorf.de/og-image.jpg",
-      url: "https://www.ambrosia-rueckersdorf.de",
-      telephone: "+49 911 86044277",
+      name: siteConfig.name,
+      image: `${siteConfig.url}${siteConfig.ogImage}`,
+      url: siteConfig.url,
+      telephone: siteConfig.contact.phone,
       address: {
          "@type": "PostalAddress",
-         streetAddress: "Hauptstraße 37",
-         addressLocality: "Rückersdorf",
-         postalCode: "90607",
-         addressCountry: "DE",
+         streetAddress: siteConfig.contact.street,
+         addressLocality: siteConfig.contact.city,
+         postalCode: siteConfig.contact.postalCode,
+         addressCountry: siteConfig.contact.addressCountry,
       },
       geo: {
          "@type": "GeoCoordinates",
-         latitude: 49.4935788,
-         longitude: 11.2414898,
+         latitude: siteConfig.geo.latitude,
+         longitude: siteConfig.geo.longitude,
       },
       servesCuisine: "Greek",
       priceRange: "€€",
-      openingHoursSpecification: [
-         {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: [
-               "Tuesday",
-               "Wednesday",
-               "Thursday",
-               "Friday",
-               "Saturday",
-            ],
-            opens: "17:00",
-            closes: "23:00",
-         },
-         {
-            "@type": "OpeningHoursSpecification",
-            dayOfWeek: "Sunday",
-            opens: "17:00",
-            closes: "22:00",
-         },
-      ],
+      openingHoursSpecification: siteConfig.openingHours.map((hours) => ({
+         "@type": "OpeningHoursSpecification",
+         dayOfWeek: hours.days,
+         opens: hours.opens,
+         closes: hours.closes,
+      })),
       menu:
          locale === "de"
-            ? "https://www.ambrosia-rueckersdorf.de/de/speisekarte"
-            : "https://www.ambrosia-rueckersdorf.de/en/menu",
+            ? `${siteConfig.url}/de/speisekarte`
+            : `${siteConfig.url}/en/menu`,
       acceptsReservations: "True",
    }
 

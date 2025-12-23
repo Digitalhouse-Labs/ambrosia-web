@@ -1,11 +1,21 @@
 import { MetadataRoute } from "next"
+import { siteConfig } from "@/config/site"
+import { getTranslations } from "next-intl/server"
 
-export default function manifest(): MetadataRoute.Manifest {
+type Props = {
+   params: Promise<{ locale: string }>
+}
+
+export default async function manifest({
+   params,
+}: Props): Promise<MetadataRoute.Manifest> {
+   const { locale } = await params
+   const t = await getTranslations({ locale, namespace: "Manifest" })
+
    return {
-      name: "Ambrosia Restaurant",
-      short_name: "Ambrosia",
-      description:
-         "Griechisches Restaurant in Rückersdorf bei Nürnberg. Authentische griechische Küche, frische Zutaten und herzliche Gastfreundschaft.",
+      name: siteConfig.name,
+      short_name: siteConfig.shortName,
+      description: t("description"),
       start_url: "/",
       display: "standalone",
       background_color: "#ffffff",
