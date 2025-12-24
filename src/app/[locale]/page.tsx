@@ -83,10 +83,10 @@ export default async function Home({ params }: Props) {
                      <h1 className="mb-6 text-center text-3xl font-light text-balance md:text-left">
                         {t("headline")}
                      </h1>
-                     <p className="mb-6 w-full text-center text-lg leading-relaxed font-light text-balance md:max-w-5xl md:text-left">
+                     <p className="mb-6 w-full text-center leading-relaxed font-light text-balance md:max-w-5xl md:text-left md:text-lg">
                         {t("description")}
                      </p>
-                     <p className="w-full text-center text-lg leading-relaxed font-light text-balance md:max-w-5xl md:text-left">
+                     <p className="w-full text-center leading-relaxed font-light text-balance md:max-w-5xl md:text-left md:text-lg">
                         {t("descriptionTwo")}
                      </p>
                   </div>
