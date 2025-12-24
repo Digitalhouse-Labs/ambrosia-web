@@ -70,7 +70,7 @@ export default async function Home({ params }: Props) {
                <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:gap-20">
                   <div className="space-y-6">
                      <div className="flex items-start justify-between gap-3">
-                        <h2 className="text-5xl font-extralight">
+                        <h2 className="text-3xl font-light">
                            {t("houseFavorites")}
                         </h2>
                         <LogoCircle className="h-auto w-10 shrink-0" />
@@ -79,12 +79,15 @@ export default async function Home({ params }: Props) {
                         <HomeMenuListWrapper />
                      </Suspense>
                   </div>
-                  <div className="lg:p-6">
-                     <h1 className="mb-6 text-center text-5xl font-extralight text-balance md:text-left">
-                        Wo Tradition auf heute trifft
+                  <div>
+                     <h1 className="mb-6 text-center text-3xl font-light text-balance md:text-left">
+                        {t("headline")}
                      </h1>
-                     <p className="w-full text-center text-lg leading-relaxed font-light text-balance md:max-w-5xl md:text-left">
+                     <p className="mb-6 w-full text-center text-lg leading-relaxed font-light text-balance md:max-w-5xl md:text-left">
                         {t("description")}
+                     </p>
+                     <p className="w-full text-center text-lg leading-relaxed font-light text-balance md:max-w-5xl md:text-left">
+                        {t("descriptionTwo")}
                      </p>
                   </div>
                </div>

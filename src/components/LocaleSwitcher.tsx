@@ -39,7 +39,7 @@ export default function LocaleSwitcher() {
             variant="ghost"
             isDisabled={isPending}
             aria-label={t("label")}
-            className="min-h-13 w-full justify-start gap-4 px-4 text-left text-[16px] opacity-70"
+            className="min-h-13 w-full justify-start gap-4 px-4 text-left text-[16px] opacity-90"
          >
             <Languages className="size-6" />
             <span className="grow">{t("changeLanguage")}</span>

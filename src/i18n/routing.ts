@@ -21,5 +21,9 @@ export const routing = defineRouting({
          de: "/datenschutz",
          en: "/privacy",
       },
+      "/learn-greek": {
+         de: "/griechisch-lernen",
+         en: "/learn-greek",
+      },
    },
 })

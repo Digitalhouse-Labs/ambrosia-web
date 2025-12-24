@@ -7,15 +7,6 @@
     --container-9xl: 110rem;
 }
 
-@utility scrollbar-hidden {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    &::-webkit-scrollbar {
-        display: none;
-    }
-}
-
 @layer components {
     .modal__dialog {
         @apply p-4 rounded-b-none md:rounded-b-3xl

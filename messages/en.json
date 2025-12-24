@@ -1,7 +1,7 @@
 {
    "Metadata": {
       "title": "Ambrosia | Greek Restaurant in Rueckersdorf near Nuremberg",
-      "description": "Authentic Greek dining in Rueckersdorf. Gyros, Souvlaki, seafood and Greek specialties.",
+      "description": "Authentic Greek cuisine near Nuremberg. Gyros, souvlaki, fish specialties & Mediterranean delights in Rueckersdorf. Reserve your table now!",
       "ogDescription": "Enjoy authentic Greek cuisine in a cozy atmosphere. Your Greek restaurant in Rueckersdorf.",
       "keywords": [
          "Greek restaurant Rueckersdorf",
@@ -18,12 +18,12 @@
    "Manifest": {
       "description": "Greek restaurant in Rückersdorf near Nuremberg. Authentic Greek cuisine, fresh ingredients and warm hospitality."
    },
-
    "Navigation": {
       "menu": "Menu",
       "home": "Home",
       "menuCard": "Menu",
       "reservation": "Make a reservation",
+      "learnGreek": "Learn Greek",
       "callUs": "Call us",
       "directions": "Get directions",
       "close": "Close",
@@ -46,8 +46,10 @@
    },
 
    "HomePage": {
+      "headline": "Where Tradition Meets Today",
       "highlightTitle": "What this place offers",
       "description": "At Ambrosia Restaurant, every dish is a tribute to Greek tradition and every moment is crafted for today. We unite the warmth of Greek hospitality, the richness of timeless flavors, and the spirit of modern life.",
+      "descriptionTwo": "Just 15 minutes from Nuremberg, authentic Greek cuisine awaits you in Rückersdorf from tender souvlaki to creamy tzatziki and fresh fish specialties. Whether it's a family celebration, a romantic evening, or a relaxed dinner with friends: With us, you experience Greece with all your senses.",
       "houseFavorites": "House Favorites",
       "viewFullMenu": "View Full Menu"
    },
@@ -159,5 +161,13 @@
       "alt12": "Greek Ouzo - Traditional aperitif from Greece",
       "alt13": "Amethystos white wine from Greece",
       "alt14": "Gambas garlic prawns - Greek seafood specialty at Restaurant Ambrosia Rueckersdorf Bavaria"
+   },
+   "LearnGreek": {
+      "title": "Learn Greek",
+      "subtitle": "Small words for our guests",
+      "metaTitle": "Learn Greek | Ambrosia Restaurant",
+      "metaDescription": "Learn basic Greek words and phrases for your restaurant visit.",
+      "description": "Learn basic Greek words and phrases for your restaurant visit. Click the speaker to hear the pronunciation.",
+      "listen": "Listen"
    }
 }

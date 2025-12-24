@@ -28,7 +28,7 @@ export function InfoModal() {
                   <>
                      <Modal.CloseTrigger />
                      <Modal.Header>
-                        <Modal.Icon className="bg-default text-foreground">
+                        <Modal.Icon className="bg-default">
                            <Info className="size-5" />
                         </Modal.Icon>
                         <Modal.Heading>{t("information")}</Modal.Heading>

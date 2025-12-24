@@ -12,6 +12,7 @@ import {
    BookOpen,
    CalendarCheck,
    ExternalLink,
+   GraduationCap,
    Home,
    PhoneCall,
    Route,
@@ -25,7 +26,7 @@ import { ThemeSwitch } from "@/components/ThemeSwitch"
 import { siteConfig } from "@/config/site"
 
 const menuItemClass =
-   "min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-70"
+   "min-h-13 w-full justify-start gap-4 px-4 text-[16px] opacity-90"
 
 export default function MenuModal() {
    const router = useRouter()
@@ -35,6 +36,8 @@ export default function MenuModal() {
 
    const isHome = pathname === `/${locale}` || pathname === "/"
    const isMenu = pathname === `/${locale}/menu` || pathname === "/menu"
+   const isLearn =
+      pathname === `/${locale}/learn-greek` || pathname === "/learn-greek"
    const isReservation =
       pathname === `/${locale}/reservation` || pathname === "/reservation"
 
@@ -73,7 +76,7 @@ export default function MenuModal() {
                            <Button
                               variant="ghost"
                               onPress={() => handleNavigateHome(close)}
-                              className={`${menuItemClass} ${isHome ? "bg-default/80" : ""}`}
+                              className={`${menuItemClass} ${isHome ? "bg-default" : ""}`}
                            >
                               <Home className="size-6" />
                               {t("home")}
@@ -81,7 +84,7 @@ export default function MenuModal() {
                            <Link
                               className={buttonVariants({
                                  variant: "ghost",
-                                 className: `${menuItemClass} ${isMenu ? "bg-default/80" : ""}`,
+                                 className: `${menuItemClass} ${isMenu ? "bg-default" : ""}`,
                               })}
                               href="/menu"
                            >
@@ -91,12 +94,24 @@ export default function MenuModal() {
                            <Link
                               className={buttonVariants({
                                  variant: "ghost",
-                                 className: `${menuItemClass} ${isReservation ? "bg-default/80" : ""}`,
+                                 className: `${menuItemClass} ${isReservation ? "bg-default" : ""}`,
                               })}
                               href="/reservation"
                            >
                               <CalendarCheck className="size-6" />
                               {t("reservation")}
+                           </Link>
+
+                           <Link
+                              href="/learn-greek"
+                              scroll={false}
+                              className={buttonVariants({
+                                 variant: "ghost",
+                                 className: `${menuItemClass} ${isLearn ? "bg-default" : ""}`,
+                              })}
+                           >
+                              <GraduationCap className="size-6" />
+                              {t("learnGreek")}
                            </Link>
 
                            <a
@@ -124,10 +139,7 @@ export default function MenuModal() {
                               <ExternalLink className="size-4" />
                            </a>
                            <LocaleSwitcher />
-                           <Surface
-                              variant="secondary"
-                              className="mt-3 rounded-2xl p-3"
-                           >
+                           <Surface className="mt-3 rounded-2xl p-3">
                               <div className="flex flex-col gap-y-3">
                                  {t("appearance")}
                                  <ThemeSwitch />

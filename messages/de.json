@@ -1,7 +1,7 @@
 {
    "Metadata": {
       "title": "Ambrosia | Griechisches Restaurant in Rückersdorf bei Nürnberg",
-      "description": "Authentisch griechisch essen in Rückersdorf. Gyros, Souvlaki, Meeresfrüchte und griechische Spezialitäten.",
+      "description": "Authentische griechische Küche nahe Nürnberg. Gyros, Souvlaki, Fischspezialitäten & mediterrane Köstlichkeiten in Rückersdorf. Jetzt Tisch reservieren!",
       "ogDescription": "Genießen Sie authentische griechische Küche in gemütlicher Atmosphäre. Ihr Grieche in Rückersdorf.",
       "keywords": [
          "griechisches Restaurant Rückersdorf",
@@ -21,7 +21,6 @@
    "Manifest": {
       "description": "Griechisches Restaurant in Rückersdorf bei Nürnberg. Authentische griechische Küche, frische Zutaten und herzliche Gastfreundschaft."
    },
-
    "Navigation": {
       "menu": "Menu",
       "home": "Startseite",
@@ -30,7 +29,8 @@
       "callUs": "Rufen Sie uns an",
       "directions": "Route planen",
       "close": "Schließen",
-      "appearance": "Aussehen"
+      "appearance": "Aussehen",
+      "learnGreek": "Lerne Griechisch"
    },
    "Header": {
       "booking": "Jetzt reservieren"
@@ -49,8 +49,10 @@
    },
 
    "HomePage": {
+      "headline": "Wo Tradition auf heute trifft",
       "highlightTitle": "Was dieser Ort bietet",
       "description": "Im Ambrosia Restaurant ist jedes Gericht eine Hommage an die griechische Tradition und jeder Moment ist für heute geschaffen. Wir vereinen die Herzlichkeit griechischer Gastfreundschaft, den Reichtum zeitloser Aromen und das Lebensgefühl der modernen Zeit.",
+      "descriptionTwo": "Nur 15 Minuten von Nürnberg entfernt erwartet Sie in Rückersdorf authentische griechische Küche von zartem Souvlaki über cremiges Tzatziki bis hin zu fangfrischen Fischspezialitäten. Ob Familienfeier, romantischer Abend oder gemütliches Essen mit Freunden: Bei uns genießen Sie Griechenland mit allen Sinnen.",
       "houseFavorites": "Haus-Spezialitäten",
       "viewFullMenu": "Zur Speisekarte"
    },
@@ -162,5 +164,13 @@
       "alt12": "Griechischer Ouzo - Traditioneller Aperitif aus Griechenland",
       "alt13": "Amethystos Weißwein aus Griechenland",
       "alt14": "Gambas garlic prawns - Greek seafood specialty at Restaurant Ambrosia Rueckersdorf Bavaria"
+   },
+   "LearnGreek": {
+      "title": "Griechisch lernen",
+      "subtitle": "Kleine Wörter für unsere Gäste",
+      "metaTitle": "Griechisch lernen | Ambrosia Restaurant",
+      "metaDescription": "Lernen Sie grundlegende griechische Wörter und Phrasen für Ihren Restaurantbesuch.",
+      "description": "Lernen Sie grundlegende griechische Wörter und Phrasen für Ihren Restaurantbesuch. Klicken Sie auf den Lautsprecher, um die Aussprache zu hören.",
+      "listen": "Anhören"
    }
 }
