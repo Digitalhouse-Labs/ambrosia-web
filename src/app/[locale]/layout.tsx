@@ -94,10 +94,8 @@ export function generateStaticParams() {
 export default async function RootLayout({
    children,
    params,
-   modal,
 }: Readonly<{
    children: ReactNode
-   modal: ReactNode
    params: Promise<{ locale: string }>
 }>) {
    const { locale } = await params
@@ -153,7 +151,6 @@ export default async function RootLayout({
                <NextIntlClientProvider>
                   <Header />
                   <main>{children}</main>
-                  {modal}
                   <Footer />
                </NextIntlClientProvider>
             </ThemeProviderNext>

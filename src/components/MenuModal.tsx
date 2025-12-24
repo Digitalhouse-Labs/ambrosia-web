@@ -103,12 +103,11 @@ export default function MenuModal() {
                            </Link>
 
                            <Link
-                              href="/learn-greek"
-                              scroll={false}
                               className={buttonVariants({
                                  variant: "ghost",
                                  className: `${menuItemClass} ${isLearn ? "bg-default" : ""}`,
                               })}
+                              href="/learn-greek"
                            >
                               <GraduationCap className="size-6" />
                               {t("learnGreek")}

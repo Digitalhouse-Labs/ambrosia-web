@@ -1,8 +1,6 @@
 import { Metadata } from "next"
-import { use } from "react"
 import { Locale } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
-import { GraduationCap } from "lucide-react"
 import LearnGreekContent from "@/components/LearnGreekContent"
 
 type Props = {
@@ -19,20 +17,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
    }
 }
 
-export default function LearnGreekPage({ params }: Props) {
-   const { locale } = use(params)
+export default async function LearnGreekPage({ params }: Props) {
+   const { locale } = await params
    setRequestLocale(locale as Locale)
+   const t = await getTranslations("LearnGreek")
 
    return (
-      <div className="mx-auto max-w-3xl px-3 py-16">
-         <div className="mb-8 text-center">
-            <div className="bg-primary/10 text-primary mx-auto mb-4 flex size-16 items-center justify-center rounded-full">
-               <GraduationCap className="size-8" />
+      <section className="py-16 md:py-28">
+         <div className="mx-auto max-w-3xl px-3">
+            <div className="mb-12 flex flex-col items-center gap-y-2">
+               <h1 className="text-3xl font-bold">{t("title")}</h1>
+               <p>{t("subtitle")}</p>
             </div>
-            <h1 className="text-3xl font-bold">Μάθε Ελληνικά</h1>
-            <p className="text-foreground/70 mt-2">Learn Greek</p>
+            <LearnGreekContent />
          </div>
-         <LearnGreekContent />
-      </div>
+      </section>
    )
 }
